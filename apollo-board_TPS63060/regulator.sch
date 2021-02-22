@@ -1701,7 +1701,7 @@ Wire Wire Line
 Connection ~ 7950 1750
 Wire Wire Line
 	7950 1750 8150 1750
-Text Notes 5750 1650 0    50   ~ 0
+Text Notes 5750 1600 0    50   ~ 0
 PS (Power Save Mode) :\n- "0" Enabled\n- "1" Disabled
 Text Notes 7350 2750 0    50   ~ 0
 PG (Power Good) :\n- "1" Power Good\n- "0" Failure
@@ -1739,9 +1739,9 @@ N.B. : R2 should be < 500kOhm
 Text Notes 8300 1350 0    50   ~ 0
 R1 = R2 x (Vout / Vfb - 1)\nwith Vfb = 500mV
 Wire Notes Line
-	6850 2100 6200 2100
+	6850 2050 6200 2050
 Wire Notes Line
-	6200 2100 6200 1650
+	6200 2050 6200 1650
 Wire Notes Line
 	7600 2300 7600 2500
 $Comp
@@ -1768,4 +1768,12 @@ Wire Notes Line
 	9650 1550 8250 1550
 Wire Notes Line
 	8250 1550 8250 850 
+Text Label 4950 1700 0    50   ~ 0
+3v3_Reg_Vin
+Text Label 6350 1950 0    50   ~ 0
+3v3_Reg_Vaux
+Text Label 8200 2100 0    50   ~ 0
+3v3_Reg_FB
+Text Label 6850 2150 2    50   ~ 0
+3v3_Reg_PS
 $EndSCHEMATC
