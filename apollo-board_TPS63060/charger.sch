@@ -811,28 +811,6 @@ Wire Notes Line
 Wire Notes Line
 	550  550  2750 550 
 $Comp
-L Connector:TestPoint TP8
-U 1 1 5FD90BDE
-P 1850 950
-F 0 "TP8" V 1804 1138 50  0000 L CNN
-F 1 "CHARGER_VIN" V 1895 1138 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 950 50  0001 C CNN
-F 3 "~" H 2050 950 50  0001 C CNN
-	1    1850 950 
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP9
-U 1 1 5FD91067
-P 1850 1250
-F 0 "TP9" V 1804 1438 50  0000 L CNN
-F 1 "VOUT" V 1895 1438 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 1250 50  0001 C CNN
-F 3 "~" H 2050 1250 50  0001 C CNN
-	1    1850 1250
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:TestPoint TP10
 U 1 1 5FD9160B
 P 1850 1800
@@ -841,39 +819,6 @@ F 1 "3V3_I2C" V 1895 1988 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 1800 50  0001 C CNN
 F 3 "~" H 2050 1800 50  0001 C CNN
 	1    1850 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP11
-U 1 1 5FD91A28
-P 1850 2000
-F 0 "TP11" V 1804 2188 50  0000 L CNN
-F 1 "SCL" V 1895 2188 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 2000 50  0001 C CNN
-F 3 "~" H 2050 2000 50  0001 C CNN
-	1    1850 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP12
-U 1 1 5FD91C9F
-P 1850 2200
-F 0 "TP12" V 1804 2388 50  0000 L CNN
-F 1 "SDA" V 1895 2388 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 2200 50  0001 C CNN
-F 3 "~" H 2050 2200 50  0001 C CNN
-	1    1850 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP13
-U 1 1 5FD91E2F
-P 1850 2500
-F 0 "TP13" V 1804 2688 50  0000 L CNN
-F 1 "~SMBALERT" V 1895 2688 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 2500 50  0001 C CNN
-F 3 "~" H 2050 2500 50  0001 C CNN
-	1    1850 2500
 	0    1    1    0   
 $EndComp
 Wire Notes Line

@@ -272,50 +272,6 @@ Wire Wire Line
 	3950 2000 4350 2000
 Text Notes 6400 1750 2    50   Italic 0
 External trigger\nswitch on board (optional)
-$Comp
-L Connector:TestPoint TP14
-U 1 1 5FD6FC2A
-P 1600 900
-F 0 "TP14" V 1554 1088 50  0000 L CNN
-F 1 "TestPoint" V 1645 1088 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 900 50  0001 C CNN
-F 3 "~" H 1800 900 50  0001 C CNN
-	1    1600 900 
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP15
-U 1 1 5FD6FEB6
-P 1600 1100
-F 0 "TP15" V 1554 1288 50  0000 L CNN
-F 1 "TestPoint" V 1645 1288 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1100 50  0001 C CNN
-F 3 "~" H 1800 1100 50  0001 C CNN
-	1    1600 1100
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP16
-U 1 1 5FD700CA
-P 1600 1500
-F 0 "TP16" V 1554 1688 50  0000 L CNN
-F 1 "TestPoint" V 1645 1688 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1500 50  0001 C CNN
-F 3 "~" H 1800 1500 50  0001 C CNN
-	1    1600 1500
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP17
-U 1 1 5FD702E9
-P 1600 1700
-F 0 "TP17" V 1554 1888 50  0000 L CNN
-F 1 "TestPoint" V 1645 1888 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1700 50  0001 C CNN
-F 3 "~" H 1800 1700 50  0001 C CNN
-	1    1600 1700
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	550  550  2300 550 
 Wire Notes Line

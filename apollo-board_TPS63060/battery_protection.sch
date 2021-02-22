@@ -130,10 +130,6 @@ F 3 "" H 3800 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3800 1500 3800 1400
-Wire Wire Line
-	3800 1800 3800 1900
-Wire Wire Line
 	3550 1700 3550 1900
 Wire Wire Line
 	3550 1900 3800 1900
@@ -143,9 +139,6 @@ Wire Wire Line
 	3550 1600 3550 1400
 Wire Wire Line
 	3550 1400 3800 1400
-Connection ~ 3800 1400
-Wire Wire Line
-	3800 1400 3800 1300
 Text Notes 8150 2450 0    50   ~ 0
 Chinese Chip price range from LCSC (10/2020) :\n$0.075-0.115 @qt=10\n$0.054-0.087 @qt=100
 Wire Wire Line
@@ -286,7 +279,6 @@ Wire Wire Line
 	3200 1600 3550 1600
 Wire Wire Line
 	3550 1700 3200 1700
-Connection ~ 3800 1900
 Text Notes 2100 1300 0    50   ~ 0
 External Battery connector
 Wire Notes Line
@@ -488,56 +480,6 @@ Text Notes 3150 2900 0    79   ~ 16
 1-Cell (ONLY) Battery Protection Circuitry
 Text Notes 1400 3600 0    50   ~ 0
 +12Vmax
-$Comp
-L battery_cell_holder_18650_smt_1042:Battery_Cell_Holder_18650_SMT_1042 BT1
-U 1 1 5FD97812
-P 3800 1700
-F 0 "BT1" H 3918 1841 50  0000 L CNN
-F 1 "Battery_Cell_Holder_18650_SMT_1042" H 3900 1700 50  0001 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 3800 1760 50  0001 C CNN
-F 3 "https://www.keyelco.com/product-pdf.cfm?p=918" V 3800 1760 50  0001 C CNN
-F 4 "Keystone" H 3918 1750 50  0000 L CNN "Mfr_name"
-F 5 "1042" H 3918 1659 50  0000 L CNN "Mfr_no"
-F 6 "https://octopart.com/1042-keystone-19977746?r=sp#PriceAndStock" H 3800 1700 50  0001 C CNN "Octopart_link"
-F 7 "https://fr.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338?ost=keystone+1042" H 3800 1700 50  0001 C CNN "Farnell_link"
-F 8 "?" H 3800 1700 50  0001 C CNN "Farnell_ref"
-F 9 "2020-11-29" H 3800 1700 50  0001 C CNN "Farnell_check_date"
-F 10 "2,94 €" H 3800 1700 50  0001 C CNN "Farnell_price_qt=1"
-F 11 "2,65 €" H 3800 1700 50  0001 C CNN "Farnell_price_qt=10"
-F 12 "2,26 €" H 3800 1700 50  0001 C CNN "Farnell_price_qt=100"
-F 13 "1,62 €" H 3800 1700 50  0001 C CNN "Farnell_price_qt=1000"
-F 14 "Available from 2021-01-16" H 3800 1700 50  0001 C CNN "Farnell_stock"
-F 15 "-" H 3800 1700 50  0001 C CNN "LCSC_link"
-F 16 "-" H 3800 1700 50  0001 C CNN "LCSC_ref"
-F 17 "2020-11-29" H 3800 1700 50  0001 C CNN "LCSC_check_date"
-F 18 "-" H 3800 1700 50  0001 C CNN "LCSC_price_qt=1"
-F 19 "-" H 3800 1700 50  0001 C CNN "LCSC_price_qt=10"
-F 20 "-" H 3800 1700 50  0001 C CNN "LCSC_price_qt=100"
-F 21 "-" H 3800 1700 50  0001 C CNN "LCSC_price_qt=1000"
-F 22 "-" H 3800 1700 50  0001 C CNN "LCSC_stock"
-F 23 "https://eu.mouser.com/ProductDetail/Keystone-Electronics/1042?qs=%2F7TOpeL5Mz4qPdWi9tuLKw%3D%3D" H 3800 1700 50  0001 C CNN "Mouser_link"
-F 24 "?" H 3800 1700 50  0001 C CNN "Mouser_ref"
-F 25 "2020-11-29" H 3800 1700 50  0001 C CNN "Mouser_check_date"
-F 26 "$3.62" H 3800 1700 50  0001 C CNN "Mouser_price_qt=1"
-F 27 "-" H 3800 1700 50  0001 C CNN "Mouser_price_qt=10"
-F 28 "$3.13" H 3800 1700 50  0001 C CNN "Mouser_price_qt=100"
-F 29 "$2.36" H 3800 1700 50  0001 C CNN "Mouser_price_qt=1000"
-F 30 "3,942" H 3800 1700 50  0001 C CNN "Mouser_stock"
-F 31 "-" H 3800 1700 50  0001 C CNN "RS_link"
-F 32 "-" H 3800 1700 50  0001 C CNN "RS_ref"
-F 33 "2020-11-29" H 3800 1700 50  0001 C CNN "RS_check_date"
-F 34 "-" H 3800 1700 50  0001 C CNN "RS_price_qt=1"
-F 35 "-" H 3800 1700 50  0001 C CNN "RS_price_qt=10"
-F 36 "-" H 3800 1700 50  0001 C CNN "RS_price_qt=100"
-F 37 "-" H 3800 1700 50  0001 C CNN "RS_price_qt=1000"
-F 38 "-" H 3800 1700 50  0001 C CNN "RS_stock"
-F 39 "TO_CHECK" H 3800 1700 50  0001 C CNN "Status"
-F 40 "1.01" H 3800 1700 50  0001 C CNN "Release_version"
-F 41 "2020-12-12" H 3800 1700 50  0001 C CNN "Release_date"
-F 42 "ManWithNoName" H 3800 1700 50  0001 C CNN "Designer"
-	1    3800 1700
-	1    0    0    -1  
-$EndComp
 Text Notes 3150 6550 0    50   ~ 0
 Do Not Populate (Default)
 Text Notes 1950 3350 0    50   ~ 0
@@ -702,10 +644,8 @@ F 44 "ManWithNoName" H 3000 1600 50  0001 C CNN "Designer"
 	1    3000 1600
 	-1   0    0    -1  
 $EndComp
-Text Label 3550 1300 0    50   ~ 0
+Text Label 3800 1400 2    50   ~ 0
 VBAT
-Wire Wire Line
-	3550 1300 3800 1300
 Text Label 1700 3200 0    50   ~ 0
 VBAT
 Wire Wire Line

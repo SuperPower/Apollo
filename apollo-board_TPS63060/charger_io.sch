@@ -88,41 +88,6 @@ Wire Wire Line
 	1950 1550 1300 1550
 Text Notes 4250 5750 0    50   ~ 0
 Pull-Down via 5k1\nresistor for 5V 3A PD
-$Comp
-L Connector:Barrel_Jack_Switch J2
-U 1 1 5F72FE29
-P 4200 3000
-F 0 "J2" H 4257 3317 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H 4257 3226 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 4250 2960 50  0001 C CNN
-F 3 "~" H 4250 2960 50  0001 C CNN
-	1    4200 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5F731685
-P 4600 3200
-F 0 "#PWR018" H 4600 2950 50  0001 C CNN
-F 1 "GND" H 4605 3027 50  0000 C CNN
-F 2 "" H 4600 3200 50  0001 C CNN
-F 3 "" H 4600 3200 50  0001 C CNN
-	1    4600 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 3200 4600 3100
-Wire Wire Line
-	4600 3000 4500 3000
-Wire Wire Line
-	4500 3100 4600 3100
-Connection ~ 4600 3100
-Wire Wire Line
-	4600 3100 4600 3000
-Wire Wire Line
-	4500 2900 4950 2900
-Text Label 4950 2900 2    50   ~ 0
-V_CHARGE
 Text Label 7400 3050 2    50   ~ 0
 V_CHARGE
 $Comp
@@ -138,8 +103,6 @@ F 3 "" H 7200 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7200 3250 7200 3150
-Text Notes 3350 2250 0    50   ~ 10
-Barrel Jack\n
 Text Notes 5900 2250 0    50   ~ 10
 External Input Pads
 Wire Notes Line
@@ -150,8 +113,6 @@ Wire Wire Line
 	1950 1050 1300 1050
 Wire Wire Line
 	1950 1250 1300 1250
-Wire Notes Line
-	3250 4050 3250 2100
 Wire Notes Line
 	5800 2100 5800 7450
 Wire Notes Line
@@ -182,7 +143,7 @@ Wire Wire Line
 	2050 6650 2050 6750
 Wire Wire Line
 	2050 6950 2050 7050
-Text Notes 3250 4800 0    50   ~ 0
+Text Notes 3500 4900 0    50   ~ 0
 So you can disable \nVBUS if you only \nneed data\n(5V will have to\nbe provided to\nVBUS)\n
 Text Label 5250 6800 2    50   ~ 0
 VBUS
@@ -432,28 +393,6 @@ F 3 "~" H 2150 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP6
-U 1 1 5FD7785B
-P 1950 1550
-F 0 "TP6" V 1904 1738 50  0000 L CNN
-F 1 "TestPoint" V 1995 1738 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2150 1550 50  0001 C CNN
-F 3 "~" H 2150 1550 50  0001 C CNN
-	1    1950 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP7
-U 1 1 5FD77B2F
-P 1950 1750
-F 0 "TP7" V 1904 1938 50  0000 L CNN
-F 1 "TestPoint" V 1995 1938 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2150 1750 50  0001 C CNN
-F 3 "~" H 2150 1750 50  0001 C CNN
-	1    1950 1750
-	0    1    1    0   
-$EndComp
-$Comp
 L dfls230l:DFLS230L D1
 U 1 1 5FD7F081
 P 9800 3150
@@ -512,12 +451,10 @@ F 49 "ManWithNoName" H 9800 3150 50  0001 C CNN "Designer"
 $EndComp
 Text Notes 5350 1300 0    118  ~ 24
 Power Voltage Range : 5-15V
-Text Notes 5000 2900 0    50   ~ 10
-<- 15V Max
 Text Notes 7450 3050 0    50   ~ 10
 <- 15V Max
 Wire Wire Line
-	3100 5050 3500 5050
+	3100 5050 3200 5050
 Wire Notes Line
 	8400 2100 8400 5800
 Wire Notes Line
@@ -673,7 +610,23 @@ Connection ~ 9250 3000
 Wire Wire Line
 	9250 3000 9250 2900
 Wire Notes Line
-	11050 2100 3250 2100
-Wire Notes Line
 	1100 7450 1100 4050
+Wire Notes Line
+	11050 2100 5800 2100
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60345563
+P 3200 4850
+F 0 "#FLG0103" H 3200 4925 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 5023 50  0000 C CNN
+F 2 "" H 3200 4850 50  0001 C CNN
+F 3 "~" H 3200 4850 50  0001 C CNN
+	1    3200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4850 3200 5050
+Connection ~ 3200 5050
+Wire Wire Line
+	3200 5050 3500 5050
 $EndSCHEMATC
