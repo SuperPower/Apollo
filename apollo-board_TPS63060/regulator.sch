@@ -1642,17 +1642,6 @@ Wire Wire Line
 	2450 6900 2450 6800
 Wire Wire Line
 	1850 6800 2450 6800
-$Comp
-L Regulator_Switching:TPS63060 U9
-U 1 1 6035D0EB
-P 7250 1950
-F 0 "U9" H 7250 2617 50  0000 C CNN
-F 1 "TPS63060" H 7250 2526 50  0000 C CNN
-F 2 "Package_SON:Texas_S-PWSON-N10_ThermalVias" H 7250 1300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps63060.pdf" H 7250 1950 50  0001 C CNN
-	1    7250 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6850 1550 6750 1550
 Wire Wire Line
@@ -1776,4 +1765,15 @@ Text Label 8200 2100 0    50   ~ 0
 3v3_Reg_FB
 Text Label 6850 2150 2    50   ~ 0
 3v3_Reg_PS
+$Comp
+L tps63060:TPS63060 U9
+U 1 1 60371E4B
+P 7250 1950
+F 0 "U9" H 7250 2617 50  0000 C CNN
+F 1 "TPS63060" H 7250 2526 50  0000 C CNN
+F 2 "TPS63060:Texas_S-PWSON-N10_ThermalVias" H 7250 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63060.pdf" H 7250 1950 50  0001 C CNN
+	1    7250 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
