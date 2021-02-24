@@ -798,7 +798,7 @@ Wire Wire Line
 	4600 1300 4600 1350
 Connection ~ 4600 1300
 Wire Wire Line
-	4950 1300 4600 1300
+	4900 1300 4600 1300
 Wire Wire Line
 	4600 1350 4600 1450
 Connection ~ 4600 1350
@@ -1064,39 +1064,6 @@ $EndComp
 Text Notes 2600 850  0    50   ~ 10
 MCU Regulator
 $Comp
-L Device:C_Small C16
-U 1 1 5FC69980
-P 4950 2000
-F 0 "C16" H 5042 2046 50  0000 L CNN
-F 1 "10μF" H 5042 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4950 2000 50  0001 C CNN
-F 3 "~" H 4950 2000 50  0001 C CNN
-	1    4950 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C17
-U 1 1 5FC817CB
-P 5350 2000
-F 0 "C17" H 5442 2046 50  0000 L CNN
-F 1 "10μF" H 5442 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5350 2000 50  0001 C CNN
-F 3 "~" H 5350 2000 50  0001 C CNN
-	1    5350 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C19
-U 1 1 5FCC838C
-P 5800 2000
-F 0 "C19" H 5892 2046 50  0000 L CNN
-F 1 "10μF" H 5892 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5800 2000 50  0001 C CNN
-F 3 "~" H 5800 2000 50  0001 C CNN
-	1    5800 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R46
 U 1 1 5FE86F13
 P 7800 2250
@@ -1144,8 +1111,8 @@ Text Label 10500 1750 2    50   ~ 0
 3v3_MCU
 Connection ~ 5350 1750
 Wire Wire Line
-	4950 1750 5350 1750
-Connection ~ 4950 1750
+	4900 1750 5350 1750
+Connection ~ 4900 1750
 $Comp
 L power:GND #PWR071
 U 1 1 60116B35
@@ -1218,32 +1185,19 @@ F 3 "" H 5800 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5800 1750
-Wire Wire Line
-	5800 1900 5800 1750
-Wire Wire Line
-	5150 2250 5350 2250
-Connection ~ 5150 2250
-Wire Wire Line
-	5350 2250 5350 2100
-Wire Wire Line
-	4950 2250 5150 2250
-Wire Wire Line
-	4950 2100 4950 2250
 $Comp
 L power:GND #PWR065
 U 1 1 5FCA7366
-P 5150 2800
-F 0 "#PWR065" H 5150 2550 50  0001 C CNN
-F 1 "GND" H 5155 2627 50  0000 C CNN
-F 2 "" H 5150 2800 50  0001 C CNN
-F 3 "" H 5150 2800 50  0001 C CNN
-	1    5150 2800
+P 4900 2800
+F 0 "#PWR065" H 4900 2550 50  0001 C CNN
+F 1 "GND" H 4905 2627 50  0000 C CNN
+F 2 "" H 4900 2800 50  0001 C CNN
+F 3 "" H 4900 2800 50  0001 C CNN
+	1    4900 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 1900 5350 1750
-Wire Wire Line
-	4950 1750 4950 1900
+	4900 1750 4900 2100
 Wire Wire Line
 	6750 2150 6750 2800
 $Comp
@@ -1630,11 +1584,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 1750 5800 1750
 Wire Wire Line
-	4950 1300 4950 1750
-Wire Wire Line
-	5150 2250 5150 2800
-Wire Wire Line
-	5800 2100 5800 2800
+	4900 1300 4900 1750
 Wire Wire Line
 	5800 1750 6550 1750
 Wire Wire Line
@@ -1663,17 +1613,17 @@ Wire Notes Line
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 6066D86F
-P 4950 1150
-F 0 "#FLG0102" H 4950 1225 50  0001 C CNN
-F 1 "PWR_FLAG" H 4950 1323 50  0000 C CNN
-F 2 "" H 4950 1150 50  0001 C CNN
-F 3 "~" H 4950 1150 50  0001 C CNN
-	1    4950 1150
+P 4900 1150
+F 0 "#FLG0102" H 4900 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 4900 1323 50  0000 C CNN
+F 2 "" H 4900 1150 50  0001 C CNN
+F 3 "~" H 4900 1150 50  0001 C CNN
+	1    4900 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 1150 4950 1300
-Connection ~ 4950 1300
+	4900 1150 4900 1300
+Connection ~ 4900 1300
 Text Notes 8300 950  0    50   ~ 10
 TPS63060
 Wire Notes Line
@@ -1684,7 +1634,7 @@ Wire Notes Line
 	9650 1550 8250 1550
 Wire Notes Line
 	8250 1550 8250 850 
-Text Label 4950 1700 0    50   ~ 0
+Text Label 4900 1700 0    50   ~ 0
 3v3_Reg_Vin
 Text Label 6350 1950 0    50   ~ 0
 3v3_Reg_Vaux
@@ -1963,4 +1913,187 @@ F 46 "ManWithNoName" H 6350 2450 50  0001 C CNN "Designer"
 $EndComp
 Wire Wire Line
 	6350 2600 6350 2800
+$Comp
+L cl21a106kaynnne:CL21A106KAYNNNE C19
+U 1 1 60441B4B
+P 5800 2250
+F 0 "C19" H 5915 2432 50  0000 L CNN
+F 1 "CL21A106KAYNNNE" H 5825 2150 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5838 2100 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/585/MLCC-1837944.pdf" H 5800 2250 50  0001 C CNN
+F 4 "Samsung" H 5800 2250 50  0001 C CNN "Mfr_name"
+F 5 "CL21A106KAYNNNE" H 5800 2250 50  0001 C CNN "Mfr_no"
+F 6 "10µF" H 5915 2341 50  0000 L CNN "cap_Value"
+F 7 "0805" H 5915 2250 50  0000 L CNN "Package"
+F 8 "X5R" H 5915 2159 50  0000 L CNN "cap_Dielectric"
+F 9 "25V" H 5915 2068 50  0000 L CNN "cap_Voltage"
+F 10 "https://octopart.com/cl21a106kaynnne-samsung-19832166?r=sp" H 5800 2250 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl21a106kaynnne/condensateur-10uf-25v-mlcc-0805/dp/3013452?st=CL21A106KAYNNNE" H 5800 2250 50  0001 C CNN "Farnell_link"
+F 12 "3013452" H 5800 2250 50  0001 C CNN "Farnell_ref"
+F 13 "2021-02-23" H 5800 2250 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 5800 2250 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0,163 €" H 5800 2250 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0,106 €" H 5800 2250 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,0584 €" H 5800 2250 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "8,621" H 5800 2250 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.html" H 5800 2250 50  0001 C CNN "LCSC_link"
+F 20 "C15850" H 5800 2250 50  0001 C CNN "LCSC_ref"
+F 21 "2021-02-23" H 5800 2250 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 5800 2250 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 5800 2250 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0222" H 5800 2250 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0181" H 5800 2250 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "2,800,820" H 5800 2250 50  0001 C CNN "LCSC_stock"
+F 27 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL21A106KAYNNNE/?qs=%2Fha2pyFadujRDz6%252Bf8pUzGVflAYIrwLCl9bPfZjrO1yjZeMIFsnibw==" H 5800 2250 50  0001 C CNN "Mouser_link"
+F 28 " 187-CL21A106KAYNNNE" H 5800 2250 50  0001 C CNN "Mouser_ref"
+F 29 "2021-02-23" H 5800 2250 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.201" H 5800 2250 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.082" H 5800 2250 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.075" H 5800 2250 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.045" H 5800 2250 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "135,165 " H 5800 2250 50  0001 C CNN "Mouser_stock"
+F 35 "-" H 5800 2250 50  0001 C CNN "RS_link"
+F 36 "-" H 5800 2250 50  0001 C CNN "RS_ref"
+F 37 "2021-02-23" H 5800 2250 50  0001 C CNN "RS_check_date"
+F 38 "-" H 5800 2250 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 5800 2250 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 5800 2250 50  0001 C CNN "RS_price_qt=100"
+F 41 "-" H 5800 2250 50  0001 C CNN "RS_price_qt=1000"
+F 42 "-" H 5800 2250 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 5800 2250 50  0001 C CNN "Status"
+F 44 "1.02" H 5800 2250 50  0001 C CNN "Release_version"
+F 45 "2020-12-21" H 5800 2250 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 5800 2250 50  0001 C CNN "Designer"
+	1    5800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1750 5800 2100
+Wire Wire Line
+	5800 2400 5800 2800
+$Comp
+L cl21a106kaynnne:CL21A106KAYNNNE C17
+U 1 1 6046E184
+P 5350 2250
+F 0 "C17" H 5465 2432 50  0000 L CNN
+F 1 "CL21A106KAYNNNE" H 5375 2150 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5388 2100 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/585/MLCC-1837944.pdf" H 5350 2250 50  0001 C CNN
+F 4 "Samsung" H 5350 2250 50  0001 C CNN "Mfr_name"
+F 5 "CL21A106KAYNNNE" H 5350 2250 50  0001 C CNN "Mfr_no"
+F 6 "10µF" H 5465 2341 50  0000 L CNN "cap_Value"
+F 7 "0805" H 5465 2250 50  0000 L CNN "Package"
+F 8 "X5R" H 5465 2159 50  0000 L CNN "cap_Dielectric"
+F 9 "25V" H 5465 2068 50  0000 L CNN "cap_Voltage"
+F 10 "https://octopart.com/cl21a106kaynnne-samsung-19832166?r=sp" H 5350 2250 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl21a106kaynnne/condensateur-10uf-25v-mlcc-0805/dp/3013452?st=CL21A106KAYNNNE" H 5350 2250 50  0001 C CNN "Farnell_link"
+F 12 "3013452" H 5350 2250 50  0001 C CNN "Farnell_ref"
+F 13 "2021-02-23" H 5350 2250 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 5350 2250 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0,163 €" H 5350 2250 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0,106 €" H 5350 2250 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,0584 €" H 5350 2250 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "8,621" H 5350 2250 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.html" H 5350 2250 50  0001 C CNN "LCSC_link"
+F 20 "C15850" H 5350 2250 50  0001 C CNN "LCSC_ref"
+F 21 "2021-02-23" H 5350 2250 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 5350 2250 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 5350 2250 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0222" H 5350 2250 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0181" H 5350 2250 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "2,800,820" H 5350 2250 50  0001 C CNN "LCSC_stock"
+F 27 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL21A106KAYNNNE/?qs=%2Fha2pyFadujRDz6%252Bf8pUzGVflAYIrwLCl9bPfZjrO1yjZeMIFsnibw==" H 5350 2250 50  0001 C CNN "Mouser_link"
+F 28 " 187-CL21A106KAYNNNE" H 5350 2250 50  0001 C CNN "Mouser_ref"
+F 29 "2021-02-23" H 5350 2250 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.201" H 5350 2250 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.082" H 5350 2250 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.075" H 5350 2250 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.045" H 5350 2250 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "135,165 " H 5350 2250 50  0001 C CNN "Mouser_stock"
+F 35 "-" H 5350 2250 50  0001 C CNN "RS_link"
+F 36 "-" H 5350 2250 50  0001 C CNN "RS_ref"
+F 37 "2021-02-23" H 5350 2250 50  0001 C CNN "RS_check_date"
+F 38 "-" H 5350 2250 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 5350 2250 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 5350 2250 50  0001 C CNN "RS_price_qt=100"
+F 41 "-" H 5350 2250 50  0001 C CNN "RS_price_qt=1000"
+F 42 "-" H 5350 2250 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 5350 2250 50  0001 C CNN "Status"
+F 44 "1.02" H 5350 2250 50  0001 C CNN "Release_version"
+F 45 "2020-12-21" H 5350 2250 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 5350 2250 50  0001 C CNN "Designer"
+	1    5350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L cl21a106kaynnne:CL21A106KAYNNNE C16
+U 1 1 60470430
+P 4900 2250
+F 0 "C16" H 5015 2432 50  0000 L CNN
+F 1 "CL21A106KAYNNNE" H 4925 2150 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4938 2100 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/585/MLCC-1837944.pdf" H 4900 2250 50  0001 C CNN
+F 4 "Samsung" H 4900 2250 50  0001 C CNN "Mfr_name"
+F 5 "CL21A106KAYNNNE" H 4900 2250 50  0001 C CNN "Mfr_no"
+F 6 "10µF" H 5015 2341 50  0000 L CNN "cap_Value"
+F 7 "0805" H 5015 2250 50  0000 L CNN "Package"
+F 8 "X5R" H 5015 2159 50  0000 L CNN "cap_Dielectric"
+F 9 "25V" H 5015 2068 50  0000 L CNN "cap_Voltage"
+F 10 "https://octopart.com/cl21a106kaynnne-samsung-19832166?r=sp" H 4900 2250 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl21a106kaynnne/condensateur-10uf-25v-mlcc-0805/dp/3013452?st=CL21A106KAYNNNE" H 4900 2250 50  0001 C CNN "Farnell_link"
+F 12 "3013452" H 4900 2250 50  0001 C CNN "Farnell_ref"
+F 13 "2021-02-23" H 4900 2250 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 4900 2250 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0,163 €" H 4900 2250 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0,106 €" H 4900 2250 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,0584 €" H 4900 2250 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "8,621" H 4900 2250 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.html" H 4900 2250 50  0001 C CNN "LCSC_link"
+F 20 "C15850" H 4900 2250 50  0001 C CNN "LCSC_ref"
+F 21 "2021-02-23" H 4900 2250 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 4900 2250 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 4900 2250 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0222" H 4900 2250 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0181" H 4900 2250 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "2,800,820" H 4900 2250 50  0001 C CNN "LCSC_stock"
+F 27 "https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL21A106KAYNNNE/?qs=%2Fha2pyFadujRDz6%252Bf8pUzGVflAYIrwLCl9bPfZjrO1yjZeMIFsnibw==" H 4900 2250 50  0001 C CNN "Mouser_link"
+F 28 " 187-CL21A106KAYNNNE" H 4900 2250 50  0001 C CNN "Mouser_ref"
+F 29 "2021-02-23" H 4900 2250 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.201" H 4900 2250 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.082" H 4900 2250 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.075" H 4900 2250 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.045" H 4900 2250 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "135,165 " H 4900 2250 50  0001 C CNN "Mouser_stock"
+F 35 "-" H 4900 2250 50  0001 C CNN "RS_link"
+F 36 "-" H 4900 2250 50  0001 C CNN "RS_ref"
+F 37 "2021-02-23" H 4900 2250 50  0001 C CNN "RS_check_date"
+F 38 "-" H 4900 2250 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 4900 2250 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 4900 2250 50  0001 C CNN "RS_price_qt=100"
+F 41 "-" H 4900 2250 50  0001 C CNN "RS_price_qt=1000"
+F 42 "-" H 4900 2250 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 4900 2250 50  0001 C CNN "Status"
+F 44 "1.02" H 4900 2250 50  0001 C CNN "Release_version"
+F 45 "2020-12-21" H 4900 2250 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 4900 2250 50  0001 C CNN "Designer"
+	1    4900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1750 5350 2100
+$Comp
+L power:GND #PWR?
+U 1 1 6047FCEA
+P 5350 2800
+F 0 "#PWR?" H 5350 2550 50  0001 C CNN
+F 1 "GND" H 5355 2627 50  0000 C CNN
+F 2 "" H 5350 2800 50  0001 C CNN
+F 3 "" H 5350 2800 50  0001 C CNN
+	1    5350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2800 5350 2400
+Wire Wire Line
+	4900 2800 4900 2400
 $EndSCHEMATC
