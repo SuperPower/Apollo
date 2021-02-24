@@ -1075,17 +1075,6 @@ F 3 "~" H 7800 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C_Small C24
-U 1 1 5FF33363
-P 8600 2350
-F 0 "C24" H 8692 2396 50  0000 L CNN
-F 1 "10pF" H 8692 2305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8600 2350 50  0001 C CNN
-F 3 "~" H 8600 2350 50  0001 C CNN
-	1    8600 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R50
 U 1 1 5FF6A110
 P 8150 1900
@@ -1147,7 +1136,7 @@ F 3 "" H 8150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 2450 8600 2800
+	8600 2550 8600 2800
 $Comp
 L power:GND #PWR079
 U 1 1 5FF335BF
@@ -2096,4 +2085,58 @@ Wire Wire Line
 	5350 2800 5350 2400
 Wire Wire Line
 	4900 2800 4900 2400
+$Comp
+L cc0603jrnpo9bn100:CC0603JRNPO9BN100 C24
+U 1 1 604E718C
+P 8600 2400
+F 0 "C24" H 8715 2582 50  0000 L CNN
+F 1 "CC0603JRNPO9BN100" H 8625 2300 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8638 2250 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/447/yageo_yago_s_a0009251638_1-1991554.pdf" H 8600 2400 50  0001 C CNN
+F 4 "Yageo" H 8600 2400 50  0001 C CNN "Mfr_name"
+F 5 "CC0603JRNPO9BN100" H 8600 2400 50  0001 C CNN "Mfr_no"
+F 6 "10pF" H 8715 2491 50  0000 L CNN "cap_Value"
+F 7 "0603" H 8715 2400 50  0000 L CNN "Package"
+F 8 "C0G" H 8715 2309 50  0000 L CNN "cap_Dielectric"
+F 9 "50V" H 8715 2218 50  0000 L CNN "cap_Voltage"
+F 10 "https://octopart.com/cc0603jrnpo9bn100-yageo-39467668?r=sp#PriceAndStock" H 8600 2400 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/yageo/cc0603jrnpo9bn100/cond-10pf-50v-5-c0g-np0-0603/dp/721967?st=CC0603JRNPO9BN100" H 8600 2400 50  0001 C CNN "Farnell_link"
+F 12 "721967" H 8600 2400 50  0001 C CNN "Farnell_ref"
+F 13 "2021-02-24" H 8600 2400 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 8600 2400 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0,0405 €" H 8600 2400 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0,0203 €" H 8600 2400 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,0135 €" H 8600 2400 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "1,951,669" H 8600 2400 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRNPO9BN100_C106245.html" H 8600 2400 50  0001 C CNN "LCSC_link"
+F 20 "C106245" H 8600 2400 50  0001 C CNN "LCSC_ref"
+F 21 "2021-02-24" H 8600 2400 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 8600 2400 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 8600 2400 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0038" H 8600 2400 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0029" H 8600 2400 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "1,595,200" H 8600 2400 50  0001 C CNN "LCSC_stock"
+F 27 "https://www.mouser.fr/ProductDetail/Yageo/CC0603JRNPO9BN100/?qs=%2Fha2pyFaduiZbois2HzNxfUPtExZ87ifpI77BjZxylV95W8Cxrl2Iw%3D%3D" H 8600 2400 50  0001 C CNN "Mouser_link"
+F 28 "603-C0603JRNPO9BN100" H 8600 2400 50  0001 C CNN "Mouser_ref"
+F 29 "2021-02-24" H 8600 2400 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.238" H 8600 2400 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "-" H 8600 2400 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "-" H 8600 2400 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "-" H 8600 2400 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "494,335" H 8600 2400 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/2006466/" H 8600 2400 50  0001 C CNN "RS_link"
+F 36 "200-6466" H 8600 2400 50  0001 C CNN "RS_ref"
+F 37 "2021-02-24" H 8600 2400 50  0001 C CNN "RS_check_date"
+F 38 "-" H 8600 2400 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 8600 2400 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 8600 2400 50  0001 C CNN "RS_price_qt=100"
+F 41 "0,006 € (qt=4000)" H 8600 2400 50  0001 C CNN "RS_price_qt=1000"
+F 42 "-" H 8600 2400 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 8600 2400 50  0001 C CNN "Status"
+F 44 "1.03" H 8600 2400 50  0001 C CNN "Release_version"
+F 45 "2020-12-21" H 8600 2400 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 8600 2400 50  0001 C CNN "Designer"
+	1    8600 2400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CC0603JRNPO9BN100
+D MLCC 0603 capacitor 10pF C0G 50V 5%
+K cap capacitor c0g 0603
+F https://www.mouser.fr/datasheet/2/447/yageo_yago_s_a0009251638_1-1991554.pdf
+$ENDCMP
+#
+#End Doc Library
