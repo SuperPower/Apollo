@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CL21A226MAQNNNE
+D MLCC 0805 capacitor 22µF X5R 25V 20%
+K cap capacitor x5r 0805
+F https://www.mouser.fr/datasheet/2/585/MLCC-1837944.pdf
+$ENDCMP
+#
+#End Doc Library
