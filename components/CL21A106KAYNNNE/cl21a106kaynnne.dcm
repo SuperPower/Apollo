@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CL21A106KAYNNNE
+D MLCC 0805 capacitor 10µF X5R 25V 10%
+K cap capacitor x5r 0805
+F https://www.mouser.fr/datasheet/2/585/MLCC-1837944.pdf
+$ENDCMP
+#
+#End Doc Library

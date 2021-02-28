@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CL10B104KB8NNNC
+D MLCC 0603 capacitor 100nF X7R 50V 10%
+K cap capacitor x7r 0603
+F https://www.mouser.fr/datasheet/2/585/MLCC-1837944.pdf
+$ENDCMP
+#
+#End Doc Library
