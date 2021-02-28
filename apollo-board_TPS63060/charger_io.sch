@@ -302,7 +302,12 @@ P 2450 6250
 F 0 "U2" H 2050 7400 50  0000 C CNN
 F 1 "USB-C" H 2100 7550 50  0000 C CNB
 F 2 "usb_c:usb-c-usb4105" H 2450 6250 50  0001 C CNN
-F 3 "" H 2450 6250 50  0001 C CNN
+F 3 "https://gct.co/files/drawings/usb4105.pdf" H 2450 6250 50  0001 C CNN
+F 4 "Global Connector Technology" H 2450 6250 50  0001 C CNN "Mfr_name"
+F 5 "USB4105-15-A" H 2450 6250 50  0001 C CNN "Mfr_no"
+F 6 "Korean Hroparts Elec" H 2450 6250 50  0001 C CNN "Alternative_Part_Mfr_name"
+F 7 "TYPE-C-31-M-12" H 2450 6250 50  0001 C CNN "Alternative_Part_Mfr_no"
+F 8 "https://datasheet.lcsc.com/szlcsc/1811131825_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf" H 2450 6250 50  0001 C CNN "Alternative_Part_Datasheet"
 	1    2450 6250
 	1    0    0    -1  
 $EndComp

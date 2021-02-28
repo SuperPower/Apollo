@@ -2178,8 +2178,13 @@ ENDDEF
 DEF usb-c_USB-C U 0 40 Y Y 1 F N
 F0 "U" -450 1200 50 H V C CNN
 F1 "usb-c_USB-C" -350 1300 50 H V C CNB
-F2 "" 0 0 50 H I C CNN
+F2 "usb_c:usb-c-usb4105" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "Global Connector Technology" 0 0 50 H I C CNN "Mfr_name"
+F5 "Korean Hroparts Elec" 0 0 50 H I C CNN "Alternative_Part_Mfr_name"
+F6 "TYPE-C-31-M-12" 0 0 50 H I C CNN "Alternative_Part_Mfr_no"
+F7 "USB4105-15-A" -50 1440 50 H V C CNN "Mfr_no"
+F8 "https://datasheet.lcsc.com/szlcsc/1811131825_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf" 0 0 50 H I C CNN "Alternative_Part_Datasheet"
 DRAW
 S 450 -200 -550 1400 0 1 0 N
 X GND A1 0 -400 200 U 50 50 1 1 W
