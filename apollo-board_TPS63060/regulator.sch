@@ -72,7 +72,7 @@ L Device:R_Small R49
 U 1 1 602F5350
 P 8400 5350
 F 0 "R49" V 8300 5450 50  0000 R CNN
-F 1 "130k" V 8200 5450 50  0000 R CNN
+F 1 "150k" V 8200 5450 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 5350 50  0001 C CNN
 F 3 "~" H 8400 5350 50  0001 C CNN
 	1    8400 5350
@@ -94,7 +94,7 @@ L Device:R_Small R51
 U 1 1 602F5346
 P 8400 4950
 F 0 "R51" V 8300 5050 50  0000 R CNN
-F 1 "680k" V 8200 5050 50  0000 R CNN
+F 1 "1.37M" V 8200 5050 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 4950 50  0001 C CNN
 F 3 "~" H 8400 4950 50  0001 C CNN
 	1    8400 4950
@@ -1363,7 +1363,7 @@ Vout = (R1/R2 + 1) x Vfb\nwith Vfb = 500mV
 Text Notes 8300 1500 0    50   ~ 0
 N.B. : R2 should be < 500kOhm
 Text Notes 8300 1350 0    50   ~ 0
-R1 = R2 x (Vout / Vfb - 1)\nwith Vfb = 500mV
+R1 = R2 x (Vout/Vfb - 1)\nwith Vfb = 500mV
 Wire Notes Line
 	6850 2050 6200 2050
 Wire Notes Line
@@ -2504,4 +2504,26 @@ Wire Wire Line
 	5250 5500 5250 5850
 Wire Wire Line
 	5250 4800 5250 5200
+Text Notes 8550 4200 0    50   ~ 0
+Vout = (R1/R2 + 1) x Vfb\nwith Vfb = 500mV
+Text Notes 8550 4550 0    50   ~ 0
+N.B. : R2 should be < 500kOhm
+Text Notes 8550 4400 0    50   ~ 0
+R1 = R2 x (Vout/Vfb - 1)\nwith Vfb = 500mV
+Text Notes 8550 4000 0    50   ~ 10
+TPS63060
+Wire Notes Line
+	8500 3900 9900 3900
+Wire Notes Line
+	9900 3900 9900 4600
+Wire Notes Line
+	9900 4600 8500 4600
+Wire Notes Line
+	8500 4600 8500 3900
+Text Notes 5800 4600 0    50   ~ 0
+PS (Power Save Mode) :\n- "0" Enabled\n- "1" Disabled
+Wire Notes Line
+	6250 5100 6250 4650
+Wire Notes Line
+	7000 5100 6250 5100
 $EndSCHEMATC
