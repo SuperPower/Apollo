@@ -12,4 +12,5 @@
   (lib (name ext_input)(type KiCad)(uri ${KIPRJMOD}/../components/ext_input/ext_input.pretty)(options "")(descr ""))
   (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/logo.pretty)(options "")(descr ""))
   (lib (name ESP32-WROOM32)(type KiCad)(uri ${KIPRJMOD}/../components/ESP32-WROOM32)(options "")(descr ""))
+  (lib (name qr-code)(type KiCad)(uri ${KIPRJMOD}/qr-code.pretty)(options "")(descr ""))
 )
