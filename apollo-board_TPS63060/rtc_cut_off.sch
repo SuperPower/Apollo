@@ -17,7 +17,7 @@ Text HLabel 1250 900  0    50   Input ~ 0
 SCL
 Text HLabel 1250 1100 0    50   BiDi ~ 0
 SDA
-Text HLabel 1250 1700 0    50   Output ~ 0
+Text HLabel 1250 1650 0    50   Output ~ 0
 INT
 NoConn ~ 6150 4300
 $Comp
@@ -66,10 +66,10 @@ Text Label 1600 900  2    50   ~ 0
 SCL
 Text Label 1600 1100 2    50   ~ 0
 SDA
-Text Label 1600 1700 2    50   ~ 0
+Text Label 1600 1650 2    50   ~ 0
 INT
 Wire Wire Line
-	1250 1700 1600 1700
+	1250 1650 1600 1650
 Wire Wire Line
 	1250 900  1600 900 
 Wire Wire Line
@@ -274,12 +274,6 @@ Text Notes 6400 1750 2    50   Italic 0
 External trigger\nswitch on board (optional)
 Wire Notes Line
 	550  550  2300 550 
-Wire Notes Line
-	2300 550  2300 1850
-Wire Notes Line
-	550  1850 2300 1850
-Wire Notes Line
-	550  550  550  1850
 Text Label 7350 3550 2    50   ~ 0
 3v3_RTC
 Wire Wire Line
@@ -291,109 +285,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 3550 6250 3550
 Connection ~ 6900 3550
-Wire Wire Line
-	1350 6350 1500 6350
-Wire Wire Line
-	1050 6350 1350 6350
-Text Label 1050 6350 0    50   ~ 0
-VIN
-Connection ~ 1350 6350
-Wire Wire Line
-	1350 6350 1350 6450
-$Comp
-L power:GND #PWR?
-U 1 1 5FE9A849
-P 1350 6750
-AR Path="/5F63A0E9/5FE9A849" Ref="#PWR?"  Part="1" 
-AR Path="/5F63A00B/5FE9A849" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 1350 6500 50  0001 C CNN
-F 1 "GND" H 1355 6577 50  0000 C CNN
-F 2 "" H 1350 6750 50  0001 C CNN
-F 3 "" H 1350 6750 50  0001 C CNN
-	1    1350 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FE9A84F
-P 2900 6750
-AR Path="/5F63A0E9/5FE9A84F" Ref="#PWR?"  Part="1" 
-AR Path="/5F63A00B/5FE9A84F" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 2900 6500 50  0001 C CNN
-F 1 "GND" H 2905 6577 50  0000 C CNN
-F 2 "" H 2900 6750 50  0001 C CNN
-F 3 "" H 2900 6750 50  0001 C CNN
-	1    2900 6750
-	1    0    0    -1  
-$EndComp
-Text Label 3550 6250 2    50   ~ 0
-3v3_RTC
-Wire Wire Line
-	3050 6550 3050 6650
-Wire Wire Line
-	3050 6650 2900 6650
-Connection ~ 2900 6650
-Wire Wire Line
-	3050 6350 3050 6250
-Wire Wire Line
-	2900 6750 2900 6650
-Wire Wire Line
-	1350 6650 1350 6750
-NoConn ~ 1500 6250
-Wire Notes Line
-	950  7350 950  5550
-Wire Wire Line
-	2900 6250 3050 6250
-Connection ~ 3050 6250
-$Comp
-L Device:C_Small C?
-U 1 1 5FE9A860
-P 3050 6450
-AR Path="/5F63A0E9/5FE9A860" Ref="C?"  Part="1" 
-AR Path="/5F63A00B/5FE9A860" Ref="C15"  Part="1" 
-F 0 "C15" H 3142 6496 50  0000 L CNN
-F 1 "2.2μF" H 3142 6405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3050 6450 50  0001 C CNN
-F 3 "~" H 3050 6450 50  0001 C CNN
-	1    3050 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5FE9A866
-P 1350 6550
-AR Path="/5F63A0E9/5FE9A866" Ref="C?"  Part="1" 
-AR Path="/5F63A00B/5FE9A866" Ref="C14"  Part="1" 
-F 0 "C14" H 1442 6596 50  0000 L CNN
-F 1 "2.2μF" H 1442 6505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1350 6550 50  0001 C CNN
-F 3 "~" H 1350 6550 50  0001 C CNN
-	1    1350 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L TPS70933DRV:TPS70933DRVT U?
-U 1 1 5FE9A86C
-P 2200 6450
-AR Path="/5F63A0E9/5FE9A86C" Ref="U?"  Part="1" 
-AR Path="/5F63A00B/5FE9A86C" Ref="U8"  Part="1" 
-F 0 "U8" H 2200 6920 50  0000 C CNN
-F 1 "TPS70933DRVT" H 2200 6829 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2200 6450 50  0001 L BNN
-F 3 "https://www.ti.com/lit/gpn/tps709" H 2200 6450 50  0001 L BNN
-	1    2200 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 6250 3550 6250
-Text Notes 1000 5650 0    50   ~ 10
-Permanent low IQ regulator for RTC and I2C
-Wire Notes Line
-	950  7350 3600 7350
-Wire Notes Line
-	950  5550 3600 5550
-Wire Notes Line
-	3600 5550 3600 7350
 Wire Notes Line
 	7500 5050 7500 3150
 Wire Notes Line
@@ -530,4 +421,123 @@ Wire Notes Line
 	9500 3150 9500 4700
 Text Notes 7650 3300 0    50   ~ 10
 Reverse ~INT~ of the RTC
+Wire Notes Line
+	3600 5550 3600 7350
+Wire Notes Line
+	950  5550 3600 5550
+Wire Notes Line
+	950  7350 3600 7350
+Text Notes 1000 5650 0    50   ~ 10
+Permanent low IQ regulator for RTC and I2C
+$Comp
+L Device:C_Small C?
+U 1 1 5FE9A866
+P 1600 6350
+AR Path="/5F63A0E9/5FE9A866" Ref="C?"  Part="1" 
+AR Path="/5F63A00B/5FE9A866" Ref="C14"  Part="1" 
+F 0 "C14" H 1692 6396 50  0000 L CNN
+F 1 "2.2μF" H 1692 6305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1600 6350 50  0001 C CNN
+F 3 "~" H 1600 6350 50  0001 C CNN
+	1    1600 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FE9A860
+P 2700 6300
+AR Path="/5F63A0E9/5FE9A860" Ref="C?"  Part="1" 
+AR Path="/5F63A00B/5FE9A860" Ref="C15"  Part="1" 
+F 0 "C15" H 2792 6346 50  0000 L CNN
+F 1 "2.2μF" H 2792 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2700 6300 50  0001 C CNN
+F 3 "~" H 2700 6300 50  0001 C CNN
+	1    2700 6300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	950  7350 950  5550
+Wire Wire Line
+	1600 6450 1600 6550
+Wire Wire Line
+	2700 6100 3200 6100
+Wire Wire Line
+	2550 6100 2700 6100
+Connection ~ 2700 6100
+Wire Wire Line
+	2700 6200 2700 6100
+Text Label 3200 6100 2    50   ~ 0
+3v3_RTC
+$Comp
+L power:GND #PWR?
+U 1 1 5FE9A84F
+P 2700 6400
+AR Path="/5F63A0E9/5FE9A84F" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A00B/5FE9A84F" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 2700 6150 50  0001 C CNN
+F 1 "GND" H 2705 6227 50  0000 C CNN
+F 2 "" H 2700 6400 50  0001 C CNN
+F 3 "" H 2700 6400 50  0001 C CNN
+	1    2700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE9A849
+P 1600 6550
+AR Path="/5F63A0E9/5FE9A849" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A00B/5FE9A849" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 1600 6300 50  0001 C CNN
+F 1 "GND" H 1605 6377 50  0000 C CNN
+F 2 "" H 1600 6550 50  0001 C CNN
+F 3 "" H 1600 6550 50  0001 C CNN
+	1    1600 6550
+	1    0    0    -1  
+$EndComp
+Text Label 1200 6100 0    50   ~ 0
+VIN
+Text HLabel 1250 1800 0    50   Input ~ 0
+VIN
+Text Label 1600 1800 2    50   ~ 0
+VIN
+Wire Wire Line
+	1250 1800 1600 1800
+Wire Notes Line
+	2300 2000 550  2000
+Wire Notes Line
+	2300 550  2300 2000
+Wire Notes Line
+	550  550  550  2000
+$Comp
+L TPS70933DRV:TPS70933DBV U6
+U 1 1 60CA0347
+P 2250 6200
+F 0 "U6" H 2250 6565 50  0000 C CNN
+F 1 "TPS70933DBV" H 2250 6474 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2250 6200 50  0001 C CNN
+F 3 "" H 2250 6200 50  0001 C CNN
+	1    2250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CA31D6
+P 2250 6550
+AR Path="/5F63A0E9/60CA31D6" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A00B/60CA31D6" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 2250 6300 50  0001 C CNN
+F 1 "GND" H 2255 6377 50  0000 C CNN
+F 2 "" H 2250 6550 50  0001 C CNN
+F 3 "" H 2250 6550 50  0001 C CNN
+	1    2250 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6100 1600 6100
+Wire Wire Line
+	1600 6250 1600 6100
+Connection ~ 1600 6100
+Wire Wire Line
+	1600 6100 1950 6100
+NoConn ~ 1950 6200
 $EndSCHEMATC

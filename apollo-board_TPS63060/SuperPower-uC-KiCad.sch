@@ -34,7 +34,7 @@ Text Notes 5850 2650 0    50   ~ 0
 3v3 MCU Buck-Boost
 Text Notes 5850 2550 0    50   ~ 0
 5V Buck-Boost
-Text Notes 6150 3950 0    50   ~ 0
+Text Notes 6150 4050 0    50   ~ 0
 RTC
 Text Notes 5850 2450 0    50   ~ 0
 Cut-Off Circuit
@@ -44,7 +44,7 @@ Text Notes 3300 4000 0    50   ~ 0
 DC Jack 5.5x2.1mm
 Text Notes 3100 4100 0    50   ~ 0
 Solder Pads / Screw Terminal
-Text Notes 6150 4050 0    50   ~ 0
+Text Notes 6150 4150 0    50   ~ 0
 Manual Wake
 $Sheet
 S 3050 3500 1250 1150
@@ -80,13 +80,14 @@ F0 "RTC" 50
 F1 "rtc_cut_off.sch" 50
 F2 "SCL" I R 7000 3600 50 
 F3 "SDA" B R 7000 3700 50 
-F4 "3v3_RTC_I2C" I L 5750 3750 50 
+F4 "3v3_RTC_I2C" I L 5750 3900 50 
 F5 "INT" O L 5750 3600 50 
+F6 "VIN" I L 5750 3750 50 
 $EndSheet
 Wire Wire Line
 	2950 3100 2950 3650
 Wire Wire Line
-	5750 2250 4300 2250
+	5750 2250 5250 2250
 Text Label 4850 2950 2    50   ~ 0
 SCL
 Text Label 4850 3050 2    50   ~ 0
@@ -136,14 +137,10 @@ F6 "EN_3V3" I R 7000 2450 50
 F7 "EN_5V" I R 7000 2350 50 
 F8 "INT" I L 5750 2950 50 
 $EndSheet
-Text Notes 6150 4150 0    50   ~ 0
+Text Notes 6150 4250 0    50   ~ 0
 I2C Pull-Up R.
 Wire Wire Line
 	5100 2550 4300 2550
-Wire Wire Line
-	5750 3750 5100 3750
-Wire Wire Line
-	5100 2550 5100 3750
 Wire Wire Line
 	5500 3600 5500 2950
 Text Label 9250 2750 2    50   ~ 0
@@ -305,4 +302,15 @@ Text Notes 1350 5500 0    50   ~ 10
 Mounting Hole Charger 
 Wire Notes Line
 	1300 5350 2550 5350
+Wire Wire Line
+	5750 3900 5100 3900
+Wire Wire Line
+	5100 2550 5100 3900
+Wire Wire Line
+	5750 3750 5250 3750
+Wire Wire Line
+	5250 3750 5250 2250
+Connection ~ 5250 2250
+Wire Wire Line
+	5250 2250 4300 2250
 $EndSCHEMATC
