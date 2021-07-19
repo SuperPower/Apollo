@@ -723,12 +723,6 @@ Wire Notes Line
 	5450 5500 5450 6150
 Text Label 4600 3750 0    50   ~ 0
 ~SMBALERT
-Text HLabel 1300 2500 0    50   Output ~ 0
-~SMBALERT
-Wire Wire Line
-	1850 2500 1300 2500
-Text Label 1850 2500 2    50   ~ 0
-~SMBALERT
 Text Notes 3000 2050 0    50   ~ 0
 Rem. : Currently limited to less than 500mA to be compatible\n       with USB2 capabilities.
 Wire Notes Line
