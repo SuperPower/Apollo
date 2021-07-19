@@ -16,7 +16,7 @@ $EndDescr
 Text HLabel 1300 1050 0    50   Output ~ 0
 VBUS
 Text HLabel 1300 1250 0    50   Output ~ 0
-CHARGER_VIN
+VDD
 Text HLabel 1300 1550 0    50   Input ~ 0
 D+
 Text HLabel 1300 1750 0    50   Input ~ 0
@@ -110,9 +110,7 @@ Wire Notes Line
 Text Notes 1200 4250 0    50   ~ 10
 USB-C
 Wire Wire Line
-	1950 1050 1300 1050
-Wire Wire Line
-	1950 1250 1300 1250
+	1950 1250 1850 1250
 Wire Notes Line
 	5800 2100 5800 7450
 Wire Notes Line
@@ -145,8 +143,6 @@ Wire Wire Line
 	2050 6950 2050 7050
 Text Notes 3500 4900 0    50   ~ 0
 So you can disable \nVBUS if you only \nneed data\n(5V will have to\nbe provided to\nVBUS)\n
-Text Label 5250 6800 2    50   ~ 0
-VBUS
 Text Label 5250 6700 2    50   ~ 0
 D-
 Text Label 3750 6700 0    50   ~ 0
@@ -239,16 +235,12 @@ Wire Wire Line
 	9800 3350 9800 3300
 Wire Wire Line
 	9350 3350 9350 3450
-Text Label 10450 2850 2    50   ~ 0
-CHARGER_VIN
 Text Label 8600 2850 0    50   ~ 0
 V_CHARGE
 Text Notes 8450 2250 0    50   ~ 10
 Power ORing
 Text Notes 8450 4300 0    50   ~ 0
 This circuit (power ORing) allows to have concurrent power inputs,\nthe input with the highest voltage (with respect to the ground)\nwill be providing power to the charging IC (CHARGER_VIN).
-Text Label 1950 1250 2    50   ~ 0
-CHARGER_VIN
 $Comp
 L Device:R_Small R?
 U 1 1 5FC4C6CF
@@ -279,12 +271,6 @@ F 3 "" H 7000 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7000 5250 7000 5400
-Wire Wire Line
-	7000 4600 7000 4500
-Wire Wire Line
-	7000 4500 6800 4500
-Text Label 6800 4500 2    50   ~ 0
-CHARGER_VIN
 Text Notes 5900 4200 0    50   ~ 10
 Power Source LED
 Wire Notes Line
@@ -454,8 +440,8 @@ F 49 "ManWithNoName" H 9800 3150 50  0001 C CNN "Designer"
 	1    9800 3150
 	0    1    1    0   
 $EndComp
-Text Notes 5350 1300 0    118  ~ 24
-Power Voltage Range : 5-15V
+Text Notes 6150 950  0    118  ~ 24
+Recommanded Power Voltage Range 
 Text Notes 7450 3050 0    50   ~ 10
 <- 15V Max
 Wire Wire Line
@@ -484,27 +470,25 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0106
 U 1 1 5FE186B3
-P 3750 1500
-F 0 "#PWR0106" H 3750 1250 50  0001 C CNN
-F 1 "GND" H 3755 1327 50  0000 C CNN
-F 2 "" H 3750 1500 50  0001 C CNN
-F 3 "" H 3750 1500 50  0001 C CNN
-	1    3750 1500
+P 3500 1600
+F 0 "#PWR0106" H 3500 1350 50  0001 C CNN
+F 1 "GND" H 3505 1427 50  0000 C CNN
+F 2 "" H 3500 1600 50  0001 C CNN
+F 3 "" H 3500 1600 50  0001 C CNN
+	1    3500 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5FE193A0
-P 3750 1400
-F 0 "#FLG0101" H 3750 1475 50  0001 C CNN
-F 1 "PWR_FLAG" H 3750 1573 50  0000 C CNN
-F 2 "" H 3750 1400 50  0001 C CNN
-F 3 "~" H 3750 1400 50  0001 C CNN
-	1    3750 1400
-	1    0    0    -1  
+P 3950 1500
+F 0 "#FLG0101" H 3950 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 3950 1673 50  0000 C CNN
+F 2 "" H 3950 1500 50  0001 C CNN
+F 3 "~" H 3950 1500 50  0001 C CNN
+	1    3950 1500
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3750 1400 3750 1500
 Wire Notes Line
 	3050 550  4550 550 
 Wire Notes Line
@@ -517,14 +501,6 @@ Text Notes 3100 650  0    50   ~ 10
 Power flags
 Wire Wire Line
 	4850 6700 5250 6700
-Wire Wire Line
-	4850 6800 5250 6800
-Text Label 3500 5050 2    50   ~ 0
-VBUS
-Text Label 8650 3350 0    50   ~ 0
-VBUS
-Text Label 1950 1050 2    50   ~ 0
-VBUS
 Wire Wire Line
 	8600 2850 9250 2850
 Wire Wire Line
@@ -543,7 +519,7 @@ Wire Wire Line
 	9800 2850 9800 3000
 Connection ~ 9800 2850
 Wire Wire Line
-	9800 2850 10450 2850
+	9800 2850 10000 2850
 Wire Wire Line
 	9250 2900 9250 2850
 Connection ~ 9250 2850
@@ -618,20 +594,129 @@ Wire Notes Line
 	1100 7450 1100 4050
 Wire Notes Line
 	11050 2100 5800 2100
+Wire Wire Line
+	3200 4900 3200 5050
 $Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 60345563
-P 3200 4850
-F 0 "#FLG0103" H 3200 4925 50  0001 C CNN
-F 1 "PWR_FLAG" H 3200 5023 50  0000 C CNN
-F 2 "" H 3200 4850 50  0001 C CNN
-F 3 "~" H 3200 4850 50  0001 C CNN
-	1    3200 4850
+L power:VDD #PWR0119
+U 1 1 610F5550
+P 7000 4450
+F 0 "#PWR0119" H 7000 4300 50  0001 C CNN
+F 1 "VDD" H 7015 4623 50  0000 C CNN
+F 2 "" H 7000 4450 50  0001 C CNN
+F 3 "" H 7000 4450 50  0001 C CNN
+	1    7000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0120
+U 1 1 610F5B4F
+P 10000 2750
+F 0 "#PWR0120" H 10000 2600 50  0001 C CNN
+F 1 "VDD" H 10015 2923 50  0000 C CNN
+F 2 "" H 10000 2750 50  0001 C CNN
+F 3 "" H 10000 2750 50  0001 C CNN
+	1    10000 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 4850 3200 5050
-Connection ~ 3200 5050
+	10000 2750 10000 2850
 Wire Wire Line
-	3200 5050 3500 5050
+	7000 4450 7000 4600
+Wire Wire Line
+	1950 1050 1600 1050
+$Comp
+L power:VDD #PWR0121
+U 1 1 610F6055
+P 1850 950
+F 0 "#PWR0121" H 1850 800 50  0001 C CNN
+F 1 "VDD" H 1865 1123 50  0000 C CNN
+F 2 "" H 1850 950 50  0001 C CNN
+F 3 "" H 1850 950 50  0001 C CNN
+	1    1850 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 950  1850 1250
+Connection ~ 1850 1250
+Wire Wire Line
+	1850 1250 1300 1250
+$Comp
+L power:VBUS #PWR0122
+U 1 1 61100595
+P 3500 950
+F 0 "#PWR0122" H 3500 800 50  0001 C CNN
+F 1 "VBUS" H 3515 1123 50  0000 C CNN
+F 2 "" H 3500 950 50  0001 C CNN
+F 3 "" H 3500 950 50  0001 C CNN
+	1    3500 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0123
+U 1 1 61100F37
+P 1600 850
+F 0 "#PWR0123" H 1600 700 50  0001 C CNN
+F 1 "VBUS" H 1615 1023 50  0000 C CNN
+F 2 "" H 1600 850 50  0001 C CNN
+F 3 "" H 1600 850 50  0001 C CNN
+	1    1600 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 850  1600 1050
+Connection ~ 1600 1050
+Wire Wire Line
+	1600 1050 1300 1050
+$Comp
+L power:VBUS #PWR0124
+U 1 1 61102547
+P 3200 4900
+F 0 "#PWR0124" H 3200 4750 50  0001 C CNN
+F 1 "VBUS" H 3215 5073 50  0000 C CNN
+F 2 "" H 3200 4900 50  0001 C CNN
+F 3 "" H 3200 4900 50  0001 C CNN
+	1    3200 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60345563
+P 3950 1050
+F 0 "#FLG0103" H 3950 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 3950 1223 50  0000 C CNN
+F 2 "" H 3950 1050 50  0001 C CNN
+F 3 "~" H 3950 1050 50  0001 C CNN
+	1    3950 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 6800 5500 5050
+Wire Wire Line
+	5500 5050 3200 5050
+Wire Wire Line
+	4850 6800 5500 6800
+Connection ~ 3200 5050
+$Comp
+L power:VBUS #PWR0125
+U 1 1 611108B5
+P 8650 3250
+F 0 "#PWR0125" H 8650 3100 50  0001 C CNN
+F 1 "VBUS" H 8665 3423 50  0000 C CNN
+F 2 "" H 8650 3250 50  0001 C CNN
+F 3 "" H 8650 3250 50  0001 C CNN
+	1    8650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3250 8650 3350
+Wire Wire Line
+	3500 950  3500 1050
+Wire Wire Line
+	3500 1050 3950 1050
+Wire Wire Line
+	3950 1500 3500 1500
+Wire Wire Line
+	3500 1500 3500 1600
+Text Notes 6150 1400 0    118  ~ 0
+- with TPS63070 Buck-Boost Chips : 5-15V\n- with TPS63060 Buck-Boost Chips : 5-12V
 $EndSCHEMATC

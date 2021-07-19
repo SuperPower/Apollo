@@ -262,12 +262,12 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5FD99F7F
-P 2400 1200
-F 0 "TP2" V 2354 1388 50  0000 L CNN
-F 1 "BATT-" V 2445 1388 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2600 1200 50  0001 C CNN
-F 3 "~" H 2600 1200 50  0001 C CNN
-	1    2400 1200
+P 2650 1200
+F 0 "TP2" V 2604 1388 50  0000 L CNN
+F 1 "BATT-" V 2695 1388 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2850 1200 50  0001 C CNN
+F 3 "~" H 2850 1200 50  0001 C CNN
+	1    2650 1200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -282,16 +282,16 @@ F 3 "" H 2250 1200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2400 1200 2250 1200
+	2650 1200 2250 1200
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5FDA33F6
-P 2400 1600
-F 0 "TP3" V 2354 1788 50  0000 L CNN
-F 1 "GND" V 2445 1788 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2600 1600 50  0001 C CNN
-F 3 "~" H 2600 1600 50  0001 C CNN
-	1    2400 1600
+P 2650 1600
+F 0 "TP3" V 2604 1788 50  0000 L CNN
+F 1 "GND" V 2695 1788 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2850 1600 50  0001 C CNN
+F 3 "~" H 2850 1600 50  0001 C CNN
+	1    2650 1600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -306,7 +306,7 @@ F 3 "" H 2250 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 1600 2250 1600
+	2650 1600 2250 1600
 Wire Wire Line
 	2250 1600 2250 1700
 $Comp
@@ -419,7 +419,7 @@ F 49 "ManWithNoName" H 2800 4750 50  0001 C CNN "Designer"
 $EndComp
 Text Notes 3250 2700 0    79   ~ 16
 1-Cell (ONLY) Battery Protection Circuitry
-Text Notes 1350 3850 0    50   ~ 0
+Text Notes 1350 3800 0    50   ~ 0
 +12Vmax ->
 Text Notes 3150 6550 0    50   ~ 0
 Do Not Populate (Default)
@@ -674,5 +674,18 @@ F 2 "" H 4200 850 50  0001 C CNN
 F 3 "~" H 4200 850 50  0001 C CNN
 	1    4200 850 
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 3850 1900 3850
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 610EB30B
+P 1450 3850
+F 0 "#FLG0108" H 1450 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 1450 4023 50  0001 C CNN
+F 2 "" H 1450 3850 50  0001 C CNN
+F 3 "~" H 1450 3850 50  0001 C CNN
+	1    1450 3850
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

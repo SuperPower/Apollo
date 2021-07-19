@@ -44,7 +44,7 @@ Wire Wire Line
 Text Label 1800 1000 2    50   ~ 0
 VIN
 Text HLabel 1200 1000 0    50   Input ~ 0
-VIN
+VCC
 Text Notes 600  650  0    50   ~ 10
 Interface
 Text Notes 3500 3650 0    50   ~ 10

@@ -497,7 +497,7 @@ $EndComp
 Text Label 1200 6100 0    50   ~ 0
 VIN
 Text HLabel 1250 1800 0    50   Input ~ 0
-VIN
+VCC
 Text Label 1600 1800 2    50   ~ 0
 VIN
 Wire Wire Line
