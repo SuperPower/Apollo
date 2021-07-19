@@ -108,7 +108,7 @@ Text Notes 2450 4450 0    50   ~ 0
 TSSOP-8 Package
 Text Notes 4550 4100 0    50   ~ 0
 Compatible pin to pin SOT23-6 ICs List :\n- AP9101CK6 (x65)\n- DW01x (x7)\n- FS312F-G (x1)\n- FS326x (x4)\n- HY2112-xx (x6) for LiFePO4 ONLY\n- HY2113-xxxx (x25) for Lithium ONLY
-Text Notes 2300 3200 0    50   ~ 0
+Text Notes 3250 3100 0    50   ~ 0
 AVAILABLE Chips for Lithium-Ion / LiPo or LiFeFO4
 Text Notes 8150 2100 0    50   ~ 0
 AP9101CK6 Chip price range from Mouser (10/2020) :\n$0.44-0.44 @qt=1\n$0.33-0.33 @qt=10\n$0.17-0.17 @qt=100
@@ -121,32 +121,32 @@ LiFePO4 SOT23-6 ICs List :\n- AP9101CK6-CPTRG1 (3,65V)\n- AP9101CK6-ASTRG1 (3,80
 $Comp
 L power:-BATT #PWR08
 U 1 1 5F7A20F6
-P 3800 2100
-F 0 "#PWR08" H 3800 1950 50  0001 C CNN
-F 1 "-BATT" H 3815 2273 50  0000 C CNN
-F 2 "" H 3800 2100 50  0001 C CNN
-F 3 "" H 3800 2100 50  0001 C CNN
-	1    3800 2100
+P 5800 1650
+F 0 "#PWR08" H 5800 1500 50  0001 C CNN
+F 1 "-BATT" H 5815 1823 50  0000 C CNN
+F 2 "" H 5800 1650 50  0001 C CNN
+F 3 "" H 5800 1650 50  0001 C CNN
+	1    5800 1650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3550 1700 3550 1900
+	5550 1250 5550 1450
 Wire Wire Line
-	3550 1900 3800 1900
+	5550 1450 5800 1450
 Wire Wire Line
-	3800 1900 3800 2000
+	5800 1450 5800 1550
 Wire Wire Line
-	3550 1600 3550 1400
+	5550 1150 5550 950 
 Wire Wire Line
-	3550 1400 3800 1400
+	5550 950  5800 950 
 Text Notes 8150 2450 0    50   ~ 0
 Chinese Chip price range from LCSC (10/2020) :\n$0.075-0.115 @qt=10\n$0.054-0.087 @qt=100
 Wire Wire Line
 	1900 5350 1900 5200
 Connection ~ 1900 5200
 Wire Notes Line
-	1250 2700 6850 2700
-Text Notes 1350 2800 0    50   ~ 10
+	1250 2150 6850 2150
+Text Notes 1300 2300 0    50   ~ 10
 Chip + Dual N-Mosfet Version
 Wire Notes Line
 	7800 1400 7800 3600
@@ -222,37 +222,30 @@ In case of using an external battery\nwith an embedded protection circuit. (or a
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 5F8B1179
-P 4150 2100
-F 0 "#FLG03" H 4150 2175 50  0001 C CNN
-F 1 "PWR_FLAG" H 4150 2273 50  0001 C CNN
-F 2 "" H 4150 2100 50  0001 C CNN
-F 3 "~" H 4150 2100 50  0001 C CNN
-	1    4150 2100
+P 6150 1650
+F 0 "#FLG03" H 6150 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 1823 50  0001 C CNN
+F 2 "" H 6150 1650 50  0001 C CNN
+F 3 "~" H 6150 1650 50  0001 C CNN
+	1    6150 1650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4150 2100 4150 2000
+	6150 1650 6150 1550
 Wire Wire Line
-	4150 2000 3800 2000
-Connection ~ 3800 2000
+	6150 1550 5800 1550
+Connection ~ 5800 1550
 Wire Wire Line
-	3800 2000 3800 2100
-Connection ~ 1900 3350
-Wire Wire Line
-	1900 3350 1900 3450
-Wire Wire Line
-	1550 3350 1900 3350
-Wire Wire Line
-	1550 3250 1550 3350
+	5800 1550 5800 1650
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5F8B2D96
-P 1550 3250
-F 0 "#FLG01" H 1550 3325 50  0001 C CNN
-F 1 "PWR_FLAG" H 1550 3423 50  0001 C CNN
-F 2 "" H 1550 3250 50  0001 C CNN
-F 3 "~" H 1550 3250 50  0001 C CNN
-	1    1550 3250
+P 1550 2600
+F 0 "#FLG01" H 1550 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 2773 50  0001 C CNN
+F 2 "" H 1550 2600 50  0001 C CNN
+F 3 "~" H 1550 2600 50  0001 C CNN
+	1    1550 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -276,15 +269,15 @@ Wire Wire Line
 	3850 5200 3850 5300
 Connection ~ 3850 5200
 Wire Wire Line
-	3200 1600 3550 1600
+	5200 1150 5550 1150
 Wire Wire Line
-	3550 1700 3200 1700
-Text Notes 2100 1300 0    50   ~ 0
+	5550 1250 5200 1250
+Text Notes 4100 850  0    50   ~ 0
 External Battery connector
 Wire Notes Line
-	2500 1350 2500 1650
+	4500 900  4500 1200
 Wire Notes Line
-	2500 1650 2950 1650
+	4500 1200 4950 1200
 Text Notes 600  650  0    50   ~ 10
 Interface
 Wire Notes Line
@@ -295,11 +288,7 @@ Text Notes 7900 1500 0    50   ~ 10
 Components Price Range
 Wire Notes Line
 	6850 5900 1250 5900
-Wire Notes Line
-	6850 2700 6850 5900
-Wire Notes Line
-	1250 2700 1250 5900
-Text Notes 3900 1900 0    50   ~ 0
+Text Notes 5900 1450 0    50   ~ 0
 18650 Battery Holder
 Wire Notes Line
 	550  1450 2000 1450
@@ -321,53 +310,53 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5FD99F7F
-P 1500 1750
-F 0 "TP2" V 1454 1938 50  0000 L CNN
-F 1 "BATT-" V 1545 1938 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1700 1750 50  0001 C CNN
-F 3 "~" H 1700 1750 50  0001 C CNN
-	1    1500 1750
+P 2450 650
+F 0 "TP2" V 2404 838 50  0000 L CNN
+F 1 "BATT-" V 2495 838 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2650 650 50  0001 C CNN
+F 3 "~" H 2650 650 50  0001 C CNN
+	1    2450 650 
 	0    1    1    0   
 $EndComp
 $Comp
 L power:-BATT #PWR01
 U 1 1 5FD9A456
-P 1350 1750
-F 0 "#PWR01" H 1350 1600 50  0001 C CNN
-F 1 "-BATT" H 1365 1923 50  0000 C CNN
-F 2 "" H 1350 1750 50  0001 C CNN
-F 3 "" H 1350 1750 50  0001 C CNN
-	1    1350 1750
+P 2300 650
+F 0 "#PWR01" H 2300 500 50  0001 C CNN
+F 1 "-BATT" H 2315 823 50  0000 C CNN
+F 2 "" H 2300 650 50  0001 C CNN
+F 3 "" H 2300 650 50  0001 C CNN
+	1    2300 650 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1500 1750 1350 1750
+	2450 650  2300 650 
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5FDA33F6
-P 1500 2150
-F 0 "TP3" V 1454 2338 50  0000 L CNN
-F 1 "GND" V 1545 2338 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1700 2150 50  0001 C CNN
-F 3 "~" H 1700 2150 50  0001 C CNN
-	1    1500 2150
+P 2450 1050
+F 0 "TP3" V 2404 1238 50  0000 L CNN
+F 1 "GND" V 2495 1238 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2650 1050 50  0001 C CNN
+F 3 "~" H 2650 1050 50  0001 C CNN
+	1    2450 1050
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5FDA3698
-P 1350 2250
-F 0 "#PWR02" H 1350 2000 50  0001 C CNN
-F 1 "GND" H 1355 2077 50  0000 C CNN
-F 2 "" H 1350 2250 50  0001 C CNN
-F 3 "" H 1350 2250 50  0001 C CNN
-	1    1350 2250
+P 2300 1150
+F 0 "#PWR02" H 2300 900 50  0001 C CNN
+F 1 "GND" H 2305 977 50  0000 C CNN
+F 2 "" H 2300 1150 50  0001 C CNN
+F 3 "" H 2300 1150 50  0001 C CNN
+	1    2300 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 2150 1350 2150
+	2450 1050 2300 1050
 Wire Wire Line
-	1350 2150 1350 2250
+	2300 1050 2300 1150
 $Comp
 L AP9101CK6-AYTRG1:AP9101CK6-AYTRG1 U1
 U 1 1 5FD65B3C
@@ -476,7 +465,7 @@ F 49 "ManWithNoName" H 2800 4750 50  0001 C CNN "Designer"
 	1    2800 4750
 	1    0    0    -1  
 $EndComp
-Text Notes 3150 2900 0    79   ~ 16
+Text Notes 3250 2700 0    79   ~ 16
 1-Cell (ONLY) Battery Protection Circuitry
 Text Notes 1400 3600 0    50   ~ 0
 +12Vmax
@@ -595,61 +584,80 @@ $EndComp
 $Comp
 L jst_ph_s2b_thru:JST_PH_S2B_thru J1
 U 1 1 5FE35E99
-P 3000 1600
-F 0 "J1" H 2918 1817 50  0000 C CNN
-F 1 "JST_PH_S2B_thru" H 2918 1726 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3000 1600 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3000 1600 50  0001 C CNN
-F 4 "JST" H 3000 1600 50  0001 C CNN "Mfr_name"
-F 5 "S2B-PH-K-S(LF)(SN)" H 3000 1600 50  0001 C CNN "Mfr_no"
-F 6 "PH Right Angle Thru 2pins" H 3000 1600 50  0001 C CNN "Package"
-F 7 "White" H 3000 1600 50  0001 C CNN "Color"
-F 8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" H 3000 1600 50  0001 C CNN "Octopart_link"
-F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" H 3000 1600 50  0001 C CNN "Farnell_link"
-F 10 "9491902" H 3000 1600 50  0001 C CNN "Farnell_ref"
-F 11 "2020-11-24" H 3000 1600 50  0001 C CNN "Farnell_check_date"
-F 12 "-" H 3000 1600 50  0001 C CNN "Farnell_price_qt=1"
-F 13 "-" H 3000 1600 50  0001 C CNN "Farnell_price_qt=10"
-F 14 "0.072€" H 3000 1600 50  0001 C CNN "Farnell_price_qt=100"
-F 15 "0.063€" H 3000 1600 50  0001 C CNN "Farnell_price_qt=1000"
-F 16 "0 (available from 2021-02-14)" H 3000 1600 50  0001 C CNN "Farnell_stock"
-F 17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" H 3000 1600 50  0001 C CNN "LCSC_link"
-F 18 "C173752" H 3000 1600 50  0001 C CNN "LCSC_ref"
-F 19 "2020-11-24" H 3000 1600 50  0001 C CNN "LCSC_check_date"
-F 20 "-" H 3000 1600 50  0001 C CNN "LCSC_price_qt=1"
-F 21 "$0.038" H 3000 1600 50  0001 C CNN "LCSC_price_qt=10"
-F 22 "$0.028" H 3000 1600 50  0001 C CNN "LCSC_price_qt=100"
-F 23 "$0.024" H 3000 1600 50  0001 C CNN "LCSC_price_qt=1000"
-F 24 "55470" H 3000 1600 50  0001 C CNN "LCSC_stock"
-F 25 "-" H 3000 1600 50  0001 C CNN "Mouser_link"
-F 26 "-" H 3000 1600 50  0001 C CNN "Mouser_ref"
-F 27 "2020-11-24" H 3000 1600 50  0001 C CNN "Mouser_check_date"
-F 28 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=1"
-F 29 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=10"
-F 30 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=100"
-F 31 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=1000"
-F 32 "-" H 3000 1600 50  0001 C CNN "Mouser_stock"
-F 33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" H 3000 1600 50  0001 C CNN "RS_link"
-F 34 "820-1494" H 3000 1600 50  0001 C CNN "RS_ref"
-F 35 "2020-11-24" H 3000 1600 50  0001 C CNN "RS_check_date"
-F 36 "-" H 3000 1600 50  0001 C CNN "RS_price_qt=1"
-F 37 "0.148€" H 3000 1600 50  0001 C CNN "RS_price_qt=10"
-F 38 "0.138€" H 3000 1600 50  0001 C CNN "RS_price_qt=100"
-F 39 "0.068€" H 3000 1600 50  0001 C CNN "RS_price_qt=1000"
-F 40 "275" H 3000 1600 50  0001 C CNN "RS_stock"
-F 41 "TO_CHECK" H 3000 1600 50  0001 C CNN "Status"
-F 42 "1.01" H 3000 1600 50  0001 C CNN "Release_version"
-F 43 "2020-12-12" H 3000 1600 50  0001 C CNN "Release_date"
-F 44 "ManWithNoName" H 3000 1600 50  0001 C CNN "Designer"
-	1    3000 1600
+P 5000 1150
+F 0 "J1" H 4918 1367 50  0000 C CNN
+F 1 "JST_PH_S2B_thru" H 4918 1276 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 5000 1150 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 5000 1150 50  0001 C CNN
+F 4 "JST" H 5000 1150 50  0001 C CNN "Mfr_name"
+F 5 "S2B-PH-K-S(LF)(SN)" H 5000 1150 50  0001 C CNN "Mfr_no"
+F 6 "PH Right Angle Thru 2pins" H 5000 1150 50  0001 C CNN "Package"
+F 7 "White" H 5000 1150 50  0001 C CNN "Color"
+F 8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" H 5000 1150 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" H 5000 1150 50  0001 C CNN "Farnell_link"
+F 10 "9491902" H 5000 1150 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-24" H 5000 1150 50  0001 C CNN "Farnell_check_date"
+F 12 "-" H 5000 1150 50  0001 C CNN "Farnell_price_qt=1"
+F 13 "-" H 5000 1150 50  0001 C CNN "Farnell_price_qt=10"
+F 14 "0.072€" H 5000 1150 50  0001 C CNN "Farnell_price_qt=100"
+F 15 "0.063€" H 5000 1150 50  0001 C CNN "Farnell_price_qt=1000"
+F 16 "0 (available from 2021-02-14)" H 5000 1150 50  0001 C CNN "Farnell_stock"
+F 17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" H 5000 1150 50  0001 C CNN "LCSC_link"
+F 18 "C173752" H 5000 1150 50  0001 C CNN "LCSC_ref"
+F 19 "2020-11-24" H 5000 1150 50  0001 C CNN "LCSC_check_date"
+F 20 "-" H 5000 1150 50  0001 C CNN "LCSC_price_qt=1"
+F 21 "$0.038" H 5000 1150 50  0001 C CNN "LCSC_price_qt=10"
+F 22 "$0.028" H 5000 1150 50  0001 C CNN "LCSC_price_qt=100"
+F 23 "$0.024" H 5000 1150 50  0001 C CNN "LCSC_price_qt=1000"
+F 24 "55470" H 5000 1150 50  0001 C CNN "LCSC_stock"
+F 25 "-" H 5000 1150 50  0001 C CNN "Mouser_link"
+F 26 "-" H 5000 1150 50  0001 C CNN "Mouser_ref"
+F 27 "2020-11-24" H 5000 1150 50  0001 C CNN "Mouser_check_date"
+F 28 "-" H 5000 1150 50  0001 C CNN "Mouser_price_qt=1"
+F 29 "-" H 5000 1150 50  0001 C CNN "Mouser_price_qt=10"
+F 30 "-" H 5000 1150 50  0001 C CNN "Mouser_price_qt=100"
+F 31 "-" H 5000 1150 50  0001 C CNN "Mouser_price_qt=1000"
+F 32 "-" H 5000 1150 50  0001 C CNN "Mouser_stock"
+F 33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" H 5000 1150 50  0001 C CNN "RS_link"
+F 34 "820-1494" H 5000 1150 50  0001 C CNN "RS_ref"
+F 35 "2020-11-24" H 5000 1150 50  0001 C CNN "RS_check_date"
+F 36 "-" H 5000 1150 50  0001 C CNN "RS_price_qt=1"
+F 37 "0.148€" H 5000 1150 50  0001 C CNN "RS_price_qt=10"
+F 38 "0.138€" H 5000 1150 50  0001 C CNN "RS_price_qt=100"
+F 39 "0.068€" H 5000 1150 50  0001 C CNN "RS_price_qt=1000"
+F 40 "275" H 5000 1150 50  0001 C CNN "RS_stock"
+F 41 "TO_CHECK" H 5000 1150 50  0001 C CNN "Status"
+F 42 "1.01" H 5000 1150 50  0001 C CNN "Release_version"
+F 43 "2020-12-12" H 5000 1150 50  0001 C CNN "Release_date"
+F 44 "ManWithNoName" H 5000 1150 50  0001 C CNN "Designer"
+	1    5000 1150
 	-1   0    0    -1  
 $EndComp
-Text Label 3800 1400 2    50   ~ 0
+Text Label 5800 950  2    50   ~ 0
 VBAT
-Text Label 1700 3200 0    50   ~ 0
+Text Label 1650 2700 0    50   ~ 0
 VBAT
+$Comp
+L Jumper:SolderJumper_2_Bridged JP4
+U 1 1 60F6D3B8
+P 1900 3000
+F 0 "JP4" V 1854 3068 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged" V 1945 3068 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1900 3000 50  0001 C CNN
+F 3 "~" H 1900 3000 50  0001 C CNN
+	1    1900 3000
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	1250 2150 1250 5900
+Wire Notes Line
+	6850 2150 6850 5900
 Wire Wire Line
-	1700 3200 1900 3200
+	1900 2850 1900 2700
 Wire Wire Line
-	1900 3200 1900 3350
+	1550 2600 1550 2700
+Wire Wire Line
+	1550 2700 1900 2700
+Wire Wire Line
+	1900 3150 1900 3450
 $EndSCHEMATC
