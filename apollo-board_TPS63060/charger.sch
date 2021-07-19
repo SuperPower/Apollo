@@ -13,9 +13,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1300 1250 0    50   Output ~ 0
+Text HLabel 1300 1000 0    50   Output ~ 0
 VOUT
-Text HLabel 1300 1450 0    50   BiDi ~ 0
+Text HLabel 1300 1150 0    50   BiDi ~ 0
 VBAT
 $Comp
 L power:GND #PWR029
@@ -42,12 +42,12 @@ $EndComp
 $Comp
 L power:VCC #PWR030
 U 1 1 5F745F21
-P 6300 750
-F 0 "#PWR030" H 6300 600 50  0001 C CNN
-F 1 "VCC" H 6315 923 50  0000 C CNN
-F 2 "" H 6300 750 50  0001 C CNN
-F 3 "" H 6300 750 50  0001 C CNN
-	1    6300 750 
+P 7750 1350
+F 0 "#PWR030" H 7750 1200 50  0001 C CNN
+F 1 "VCC" H 7765 1523 50  0000 C CNN
+F 2 "" H 7750 1350 50  0001 C CNN
+F 3 "" H 7750 1350 50  0001 C CNN
+	1    7750 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -65,8 +65,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 2800 3950 2800
 Connection ~ 3750 2800
-Wire Wire Line
-	3750 2600 3750 2700
 Wire Wire Line
 	3750 2800 3750 3550
 Wire Wire Line
@@ -335,7 +333,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3950 5000 3950
 Wire Wire Line
-	1850 1450 1300 1450
+	1850 1150 1300 1150
 $Comp
 L power:GND #PWR035
 U 1 1 5F832657
@@ -486,8 +484,6 @@ Wire Wire Line
 	7200 850  7500 850 
 Wire Wire Line
 	7500 850  7500 1450
-Wire Wire Line
-	1850 1250 1300 1250
 Wire Notes Line
 	6400 950  7900 950 
 Wire Notes Line
@@ -523,39 +519,6 @@ Wire Wire Line
 	1650 3750 1650 3650
 Text Notes 1850 3900 0    50   ~ 0
 DNP : Used as an option and/or debug
-Wire Wire Line
-	5950 850  6300 850 
-Wire Wire Line
-	5950 750  5950 850 
-$Comp
-L power:PWR_FLAG #FLG06
-U 1 1 5F8C11C0
-P 5950 750
-F 0 "#FLG06" H 5950 825 50  0001 C CNN
-F 1 "PWR_FLAG" H 5950 923 50  0001 C CNN
-F 2 "" H 5950 750 50  0001 C CNN
-F 3 "~" H 5950 750 50  0001 C CNN
-	1    5950 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 2700 3750 2700
-Wire Wire Line
-	3500 2600 3500 2700
-$Comp
-L power:PWR_FLAG #FLG05
-U 1 1 5FC883D2
-P 3500 2600
-F 0 "#FLG05" H 3500 2675 50  0001 C CNN
-F 1 "PWR_FLAG" H 3500 2773 50  0001 C CNN
-F 2 "" H 3500 2600 50  0001 C CNN
-F 3 "~" H 3500 2600 50  0001 C CNN
-	1    3500 2600
-	1    0    0    -1  
-$EndComp
-Connection ~ 3750 2700
-Wire Wire Line
-	3750 2700 3750 2800
 $Comp
 L Device:R_US R14
 U 1 1 5F779EA2
@@ -590,46 +553,40 @@ Wire Wire Line
 Connection ~ 5300 5550
 Wire Wire Line
 	5300 5550 5300 5500
-Text HLabel 1300 950  0    50   Input ~ 0
+Text HLabel 1300 850  0    50   Input ~ 0
 CHARGER_VIN
-Text Label 1850 950  2    50   ~ 0
+Text Label 1850 850  2    50   ~ 0
 CHARGER_VIN
 Wire Wire Line
-	1850 950  1300 950 
+	1850 850  1300 850 
 Text Notes 1400 5450 0    50   ~ 0
 See Table 5 in the datasheet
-Text HLabel 1300 1800 0    50   Input ~ 0
+Text HLabel 1300 1300 0    50   Input ~ 0
 3v3_I2C
 Wire Wire Line
-	1300 1800 1850 1800
-Text Label 1850 1800 2    50   ~ 0
+	1300 1300 2200 1300
+Text Label 1850 1300 2    50   ~ 0
 3v3_I2C
 Text Label 4600 3850 0    50   ~ 0
 3v3_I2C
 Wire Wire Line
 	4600 3850 5000 3850
-Text Label 7850 1450 2    50   ~ 0
-VOUT
-Wire Wire Line
-	7850 1450 7500 1450
 Connection ~ 7500 1450
-Text Label 1850 1250 2    50   ~ 0
-VOUT
 Text Label 8150 4350 2    50   ~ 0
 VBAT
-Text HLabel 1300 2000 0    50   Input ~ 0
+Text HLabel 1300 1450 0    50   Input ~ 0
 SCL
-Text HLabel 1300 2200 0    50   BiDi ~ 0
+Text HLabel 1300 1600 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	1300 2200 1850 2200
+	1300 1600 1850 1600
 Wire Wire Line
-	1300 2000 1850 2000
-Text Label 1850 1450 2    50   ~ 0
+	1300 1450 1850 1450
+Text Label 1850 1150 2    50   ~ 0
 VBAT
-Text Label 1850 2000 2    50   ~ 0
+Text Label 1850 1450 2    50   ~ 0
 SCL
-Text Label 1850 2200 2    50   ~ 0
+Text Label 1850 1600 2    50   ~ 0
 SDA
 Text Label 4600 3950 0    50   ~ 0
 SCL
@@ -801,18 +758,18 @@ F 44 "ManWithNoName" H 2150 3750 50  0001 C CNN "Designer"
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
-	550  2650 2750 2650
+	550  1700 2750 1700
 Wire Notes Line
 	550  550  2750 550 
 $Comp
 L Connector:TestPoint TP10
 U 1 1 5FD9160B
-P 1850 1800
-F 0 "TP10" V 1804 1988 50  0000 L CNN
-F 1 "3V3_I2C" V 1895 1988 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 1800 50  0001 C CNN
-F 3 "~" H 2050 1800 50  0001 C CNN
-	1    1850 1800
+P 2200 1300
+F 0 "TP10" V 2154 1488 50  0000 L CNN
+F 1 "3V3_I2C" V 2245 1488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2400 1300 50  0001 C CNN
+F 3 "~" H 2400 1300 50  0001 C CNN
+	1    2200 1300
 	0    1    1    0   
 $EndComp
 Wire Notes Line
@@ -1640,4 +1597,106 @@ F 3 "~" H 7350 3350 50  0001 C CNN
 	1    7350 3350
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:VCCQ #PWR013
+U 1 1 60FDB38C
+P 6300 750
+F 0 "#PWR013" H 6300 600 50  0001 C CNN
+F 1 "VCCQ" H 6315 923 50  0000 C CNN
+F 2 "" H 6300 750 50  0001 C CNN
+F 3 "" H 6300 750 50  0001 C CNN
+	1    6300 750 
+	1    0    0    -1  
+$EndComp
+Text Notes 600  1850 0    50   ~ 10
+Global Power Signals
+$Comp
+L power:VDD #PWR010
+U 1 1 61009CFF
+P 2050 2000
+F 0 "#PWR010" H 2050 1850 50  0001 C CNN
+F 1 "VDD" H 2065 2173 50  0000 C CNN
+F 2 "" H 2050 2000 50  0001 C CNN
+F 3 "" H 2050 2000 50  0001 C CNN
+	1    2050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 6100A2B8
+P 2350 2050
+F 0 "#FLG01" H 2350 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 2350 2223 50  0001 C CNN
+F 2 "" H 2350 2050 50  0001 C CNN
+F 3 "~" H 2350 2050 50  0001 C CNN
+	1    2350 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2600 3750 2800
+Wire Wire Line
+	2050 2000 2050 2050
+Wire Wire Line
+	2050 2050 2350 2050
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 5F8C11C0
+P 2350 2400
+F 0 "#FLG06" H 2350 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2350 2573 50  0001 C CNN
+F 2 "" H 2350 2400 50  0001 C CNN
+F 3 "~" H 2350 2400 50  0001 C CNN
+	1    2350 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 6103092B
+P 2050 2350
+F 0 "#PWR011" H 2050 2200 50  0001 C CNN
+F 1 "VCC" H 2065 2523 50  0000 C CNN
+F 2 "" H 2050 2350 50  0001 C CNN
+F 3 "" H 2050 2350 50  0001 C CNN
+	1    2050 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2350 2050 2400
+Wire Wire Line
+	2050 2400 2350 2400
+Wire Wire Line
+	7750 1450 7500 1450
+Wire Wire Line
+	7750 1450 7750 1350
+Wire Notes Line
+	550  2650 2750 2650
+$Comp
+L power:VCC #PWR07
+U 1 1 6105FA1F
+P 2050 900
+F 0 "#PWR07" H 2050 750 50  0001 C CNN
+F 1 "VCC" H 2065 1073 50  0000 C CNN
+F 2 "" H 2050 900 50  0001 C CNN
+F 3 "" H 2050 900 50  0001 C CNN
+	1    2050 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1000 2050 900 
+Wire Wire Line
+	1300 1000 2050 1000
+$Comp
+L Connector:TestPoint TP6
+U 1 1 61067853
+P 2200 1000
+F 0 "TP6" V 2154 1188 50  0000 L CNN
+F 1 "3V3_I2C" V 2245 1188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2400 1000 50  0001 C CNN
+F 3 "~" H 2400 1000 50  0001 C CNN
+	1    2200 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 1000 2050 1000
+Connection ~ 2050 1000
 $EndSCHEMATC
