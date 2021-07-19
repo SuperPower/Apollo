@@ -1738,4 +1738,8 @@ Text Label 4950 3250 2    50   ~ 0
 CLP
 Text Label 4950 3400 2    50   ~ 0
 INFET
+Text Label 6250 3950 0    50   ~ 0
+CSP
+Text Label 6250 3350 0    50   ~ 0
+BATFET
 $EndSCHEMATC
