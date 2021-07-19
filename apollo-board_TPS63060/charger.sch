@@ -507,7 +507,7 @@ L Device:R_US R12
 U 1 1 5F84595F
 P 2550 3750
 F 0 "R12" V 2345 3750 50  0000 C CNN
-F 1 "2.2k" V 2436 3750 50  0000 C CNN
+F 1 "DNP/2.2k" V 2436 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2590 3740 50  0001 C CNN
 F 3 "~" H 2550 3750 50  0001 C CNN
 	1    2550 3750
@@ -522,7 +522,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 3750 1650 3650
 Text Notes 1850 3900 0    50   ~ 0
-Used as an option and/or debug
+DNP : Used as an option and/or debug
 Wire Wire Line
 	5950 850  6300 850 
 Wire Wire Line
