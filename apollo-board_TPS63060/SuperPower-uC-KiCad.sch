@@ -23,12 +23,12 @@ $EndSheet
 Wire Wire Line
 	2550 2550 3050 2550
 Text Notes 1400 2300 0    50   ~ 0
-Battery Holder
+External Battery Connector
 Text Notes 1400 2450 0    50   ~ 0
 Battery Protection
 Text Notes 3300 2400 0    50   ~ 0
 Battery Charger\n     +\nPower Path
-Text Notes 5850 2750 0    50   ~ 0
+Text Notes 6150 4350 0    50   ~ 0
 3v3 RTC/I2C LDO
 Text Notes 5850 2650 0    50   ~ 0
 3v3 MCU Buck-Boost
@@ -40,10 +40,8 @@ Text Notes 5850 2450 0    50   ~ 0
 Cut-Off Circuit
 Text Notes 3550 3900 0    50   ~ 0
 USB-C
-Text Notes 3300 4000 0    50   ~ 0
-DC Jack 5.5x2.1mm
-Text Notes 3100 4100 0    50   ~ 0
-Solder Pads / Screw Terminal
+Text Notes 3450 4100 0    50   ~ 0
+Solder Pads
 Text Notes 6150 4150 0    50   ~ 0
 Manual Wake
 $Sheet
@@ -313,4 +311,10 @@ Wire Wire Line
 Connection ~ 5250 2250
 Wire Wire Line
 	5250 2250 4300 2250
+Text Notes 3050 2750 0    50   ~ 0
+Power Battery Output connector
+Text Notes 3200 2850 0    50   ~ 0
+External NTC connector
+Text Notes 5850 2750 0    50   ~ 0
+3v3 Aux. Output
 $EndSCHEMATC
