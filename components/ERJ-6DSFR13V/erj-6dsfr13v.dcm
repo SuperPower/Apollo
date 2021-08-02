@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ERJ-6DSFR13V
+D Resistor, 0805, 0.5W, 1%, 130mΩ
+K R res resistor 0805
+F https://www.mouser.fr/datasheet/2/315/AOA0000C313-1141758.pdf
+$ENDCMP
+#
+#End Doc Library

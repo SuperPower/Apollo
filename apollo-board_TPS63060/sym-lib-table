@@ -57,4 +57,5 @@
   (lib (name tmk212ab7475kg-t)(type Legacy)(uri ${KIPRJMOD}/../components/TMK212AB7475KG-T/tmk212ab7475kg-t.lib)(options "")(descr ""))
   (lib (name usb-c)(type Legacy)(uri ${KIPRJMOD}/../components/USB-C/usb-c.lib)(options "")(descr ""))
   (lib (name XC6206P332MR)(type Legacy)(uri ${KIPRJMOD}/../components/XC6206P332MR/XC6206P332MR.lib)(options "")(descr ""))
+  (lib (name ERJ-6DSFR13V)(type Legacy)(uri ${KIPRJMOD}/../components/ERJ-6DSFR13V/erj-6dsfr13v.lib)(options "")(descr ""))
 )

@@ -557,7 +557,7 @@ Text Label 4600 3850 0    50   ~ 0
 Wire Wire Line
 	4600 3850 5000 3850
 Connection ~ 7500 1450
-Text Label 8150 4350 2    50   ~ 0
+Text Label 8650 4350 2    50   ~ 0
 VBAT
 Text HLabel 1300 1450 0    50   Input ~ 0
 SCL
@@ -586,12 +586,12 @@ Wire Notes Line
 Wire Notes Line
 	8400 6450 8400 5300
 Wire Wire Line
-	7450 4350 8150 4350
+	7450 4350 7900 4350
 Wire Wire Line
 	7450 4750 7450 4950
 Text Notes 8550 5450 0    50   ~ 10
 Connectors
-Text Notes 8200 4150 0    59   ~ 12
+Text Notes 8300 4150 0    59   ~ 12
 ! The battery is implemented on the "Battery Module" Sheet !
 Wire Wire Line
 	7300 1400 7400 1400
@@ -1100,60 +1100,6 @@ F 45 "2020-12-18" H 4700 2800 50  0001 C CNN "Release_date"
 F 46 "ManWithNoName" H 4700 2800 50  0001 C CNN "Designer"
 	1    4700 2800
 	0    1    1    0   
-$EndComp
-$Comp
-L rl0805fr-7w0r068l:RL0805FR-7W0R068L R20
-U 1 1 5FE06298
-P 7450 4150
-F 0 "R20" H 7382 4013 50  0000 R CNN
-F 1 "RL0805FR-7W0R068L" V 6972 4150 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7490 4140 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RL_Group_521_RoHS_L_2.pdf" H 7450 4150 50  0001 C CNN
-F 4 "Yageo" H 7450 4150 50  0001 C CNN "Mfr_name"
-F 5 "RL0805FR-7W0R068L" H 7450 4150 50  0001 C CNN "Mfr_no"
-F 6 "68mΩ" H 7382 4104 50  0000 R CNN "res_value"
-F 7 "0805" H 7382 4195 50  0000 R CNN "Package"
-F 8 "0.25W" H 7382 4286 50  0000 R CNN "res_power"
-F 9 "1%" H 7382 4332 50  0001 R CNN "res_tolerance"
-F 10 "https://octopart.com/rl0805fr-7w0r068l-yageo-42623477?r=sp" H 7450 4150 50  0001 C CNN "Octopart_link"
-F 11 "https://fr.farnell.com/yageo/rl0805fr-7w0r068l/res-couche-epaisse-0-068r-1-0/dp/8067694?st=RL0805FR-7W0R068L" H 7450 4150 50  0001 C CNN "Farnell_link"
-F 12 "8067694" H 7450 4150 50  0001 C CNN "Farnell_ref"
-F 13 "2020-12-18" H 7450 4150 50  0001 C CNN "Farnell_check_date"
-F 14 "-" H 7450 4150 50  0001 C CNN "Farnell_price_qt=1"
-F 15 "0,425 €" H 7450 4150 50  0001 C CNN "Farnell_price_qt=10"
-F 16 "0,313 €" H 7450 4150 50  0001 C CNN "Farnell_price_qt=100"
-F 17 "0,188 €" H 7450 4150 50  0001 C CNN "Farnell_price_qt=1000"
-F 18 "3,671" H 7450 4150 50  0001 C CNN "Farnell_stock"
-F 19 "https://lcsc.com/product-detail/Low-Resistors-Current-Sense-Resistors-Surface-Mount_YAGEO-RL0805FR-7W0R068L_C327058.html" H 7450 4150 50  0001 C CNN "LCSC_link"
-F 20 "C327058" H 7450 4150 50  0001 C CNN "LCSC_ref"
-F 21 "2020-12-18" H 7450 4150 50  0001 C CNN "LCSC_check_date"
-F 22 "-" H 7450 4150 50  0001 C CNN "LCSC_price_qt=1"
-F 23 "-" H 7450 4150 50  0001 C CNN "LCSC_price_qt=10"
-F 24 "$0.0107" H 7450 4150 50  0001 C CNN "LCSC_price_qt=100"
-F 25 "$0.0081" H 7450 4150 50  0001 C CNN "LCSC_price_qt=1000"
-F 26 "3,450" H 7450 4150 50  0001 C CNN "LCSC_stock"
-F 27 "https://eu.mouser.com/ProductDetail/Yageo/RL0805FR-7W0R068L/?qs=%2Fha2pyFaduj9bpkok1HMDppYrjDK3bZXRH7iIcrAgNVUTh6fOxV3wA%3D%3D" H 7450 4150 50  0001 C CNN "Mouser_link"
-F 28 "603-RL805FR-7W0R068L" H 7450 4150 50  0001 C CNN "Mouser_ref"
-F 29 "2020-12-18" H 7450 4150 50  0001 C CNN "Mouser_check_date"
-F 30 "$0.675" H 7450 4150 50  0001 C CNN "Mouser_price_qt=1"
-F 31 "$0.376" H 7450 4150 50  0001 C CNN "Mouser_price_qt=10"
-F 32 "$0.175" H 7450 4150 50  0001 C CNN "Mouser_price_qt=100"
-F 33 "$0.134" H 7450 4150 50  0001 C CNN "Mouser_price_qt=1000"
-F 34 "5,178" H 7450 4150 50  0001 C CNN "Mouser_stock"
-F 35 "-" H 7450 4150 50  0001 C CNN "RS_link"
-F 36 "-" H 7450 4150 50  0001 C CNN "RS_ref"
-F 37 "2020-12-18" H 7450 4150 50  0001 C CNN "RS_check_date"
-F 38 "-" H 7450 4150 50  0001 C CNN "RS_price_qt=1"
-F 39 "-" H 7450 4150 50  0001 C CNN "RS_price_qt=10"
-F 40 "-" H 7450 4150 50  0001 C CNN "RS_price_qt=100"
-F 41 "-" H 7450 4150 50  0001 C CNN "RS_price_qt=1000"
-F 42 "-" H 7450 4150 50  0001 C CNN "RS_stock"
-F 43 "TO_CHECK" H 7450 4150 50  0001 C CNN "Status"
-F 44 "1.00" H 7450 4150 50  0001 C CNN "Release_version"
-F 45 "2020-12-18" H 7450 4150 50  0001 C CNN "Release_date"
-F 46 "ManWithNoName" H 7450 4150 50  0001 C CNN "Designer"
-	1    7450 4150
-	-1   0    0    1   
 $EndComp
 $Comp
 L dmp2035uvt:DMP2035UVT Q12
@@ -1742,4 +1688,121 @@ Text Label 6250 3950 0    50   ~ 0
 CSP
 Text Label 6250 3350 0    50   ~ 0
 BATFET
+$Comp
+L erj-6dsfr13v:ERJ-6DSFR13V R20
+U 1 1 610916CE
+P 7450 4150
+F 0 "R20" H 7518 4287 50  0000 L CNN
+F 1 "ERJ-6DSFR13V" H 7518 4287 50  0001 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7490 4140 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/315/AOA0000C313-1141758.pdf" H 7450 4150 50  0001 C CNN
+F 4 "Panasonic" H 7450 4150 50  0001 C CNN "Mfr_name"
+F 5 "ERJ-6DSFR13V" H 7450 4150 50  0001 C CNN "Mfr_no"
+F 6 "130mΩ" H 7518 4196 50  0000 L CNN "res_value"
+F 7 "0805" H 7518 4105 50  0000 L CNN "Package"
+F 8 "0.5W" H 7518 4014 50  0000 L CNN "res_power"
+F 9 "1%" H 7518 3968 50  0001 L CNN "res_tolerance"
+F 10 "https://octopart.com/erj-6dsfr13v-panasonic-73854745?r=sp" H 7450 4150 50  0001 C CNN "Octopart_link"
+F 11 "-" H 7450 4150 50  0001 C CNN "Farnell_link"
+F 12 "-" H 7450 4150 50  0001 C CNN "Farnell_ref"
+F 13 "2021-08-02" H 7450 4150 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 7450 4150 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "-" H 7450 4150 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "-" H 7450 4150 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "-" H 7450 4150 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "-" H 7450 4150 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_PANASONIC-ERJ-6DSFR13V_C2087625.html" H 7450 4150 50  0001 C CNN "LCSC_link"
+F 20 "C2087625" H 7450 4150 50  0001 C CNN "LCSC_ref"
+F 21 "2021-08-02" H 7450 4150 50  0001 C CNN "LCSC_check_date"
+F 22 "$0.0735" H 7450 4150 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "$0.0735" H 7450 4150 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0735" H 7450 4150 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.027" H 7450 4150 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "0" H 7450 4150 50  0001 C CNN "LCSC_stock"
+F 27 "https://www.mouser.fr/ProductDetail/Panasonic/ERJ-6DSFR13V?qs=%2Fha2pyFadugIZF2pekR4yK6MEbODzjmXbKrvD7WW6loGJNeNbUmT8A%3D%3D" H 7450 4150 50  0001 C CNN "Mouser_link"
+F 28 "667-ERJ-6DSFR13V" H 7450 4150 50  0001 C CNN "Mouser_ref"
+F 29 "2021-08-02" H 7450 4150 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.433" H 7450 4150 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.173" H 7450 4150 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.089" H 7450 4150 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.064" H 7450 4150 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "9,467" H 7450 4150 50  0001 C CNN "Mouser_stock"
+F 35 "-" H 7450 4150 50  0001 C CNN "RS_link"
+F 36 "-" H 7450 4150 50  0001 C CNN "RS_ref"
+F 37 "2021-08-02" H 7450 4150 50  0001 C CNN "RS_check_date"
+F 38 "-" H 7450 4150 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 7450 4150 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 7450 4150 50  0001 C CNN "RS_price_qt=100"
+F 41 "-" H 7450 4150 50  0001 C CNN "RS_price_qt=1000"
+F 42 "-" H 7450 4150 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 7450 4150 50  0001 C CNN "Status"
+F 44 "1.00" H 7450 4150 50  0001 C CNN "Release_version"
+F 45 "2021-08-02" H 7450 4150 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 7450 4150 50  0001 C CNN "Designer"
+	1    7450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L erj-6dsfr13v:ERJ-6DSFR13V R5
+U 1 1 61093977
+P 7900 4150
+F 0 "R5" H 7968 4287 50  0000 L CNN
+F 1 "ERJ-6DSFR13V" H 7968 4287 50  0001 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7940 4140 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/315/AOA0000C313-1141758.pdf" H 7900 4150 50  0001 C CNN
+F 4 "Panasonic" H 7900 4150 50  0001 C CNN "Mfr_name"
+F 5 "ERJ-6DSFR13V" H 7900 4150 50  0001 C CNN "Mfr_no"
+F 6 "130mΩ" H 7968 4196 50  0000 L CNN "res_value"
+F 7 "0805" H 7968 4105 50  0000 L CNN "Package"
+F 8 "0.5W" H 7968 4014 50  0000 L CNN "res_power"
+F 9 "1%" H 7968 3968 50  0001 L CNN "res_tolerance"
+F 10 "https://octopart.com/erj-6dsfr13v-panasonic-73854745?r=sp" H 7900 4150 50  0001 C CNN "Octopart_link"
+F 11 "-" H 7900 4150 50  0001 C CNN "Farnell_link"
+F 12 "-" H 7900 4150 50  0001 C CNN "Farnell_ref"
+F 13 "2021-08-02" H 7900 4150 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 7900 4150 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "-" H 7900 4150 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "-" H 7900 4150 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "-" H 7900 4150 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "-" H 7900 4150 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_PANASONIC-ERJ-6DSFR13V_C2087625.html" H 7900 4150 50  0001 C CNN "LCSC_link"
+F 20 "C2087625" H 7900 4150 50  0001 C CNN "LCSC_ref"
+F 21 "2021-08-02" H 7900 4150 50  0001 C CNN "LCSC_check_date"
+F 22 "$0.0735" H 7900 4150 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "$0.0735" H 7900 4150 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0735" H 7900 4150 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.027" H 7900 4150 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "0" H 7900 4150 50  0001 C CNN "LCSC_stock"
+F 27 "https://www.mouser.fr/ProductDetail/Panasonic/ERJ-6DSFR13V?qs=%2Fha2pyFadugIZF2pekR4yK6MEbODzjmXbKrvD7WW6loGJNeNbUmT8A%3D%3D" H 7900 4150 50  0001 C CNN "Mouser_link"
+F 28 "667-ERJ-6DSFR13V" H 7900 4150 50  0001 C CNN "Mouser_ref"
+F 29 "2021-08-02" H 7900 4150 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.433" H 7900 4150 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.173" H 7900 4150 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.089" H 7900 4150 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.064" H 7900 4150 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "9,467" H 7900 4150 50  0001 C CNN "Mouser_stock"
+F 35 "-" H 7900 4150 50  0001 C CNN "RS_link"
+F 36 "-" H 7900 4150 50  0001 C CNN "RS_ref"
+F 37 "2021-08-02" H 7900 4150 50  0001 C CNN "RS_check_date"
+F 38 "-" H 7900 4150 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 7900 4150 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 7900 4150 50  0001 C CNN "RS_price_qt=100"
+F 41 "-" H 7900 4150 50  0001 C CNN "RS_price_qt=1000"
+F 42 "-" H 7900 4150 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 7900 4150 50  0001 C CNN "Status"
+F 44 "1.00" H 7900 4150 50  0001 C CNN "Release_version"
+F 45 "2021-08-02" H 7900 4150 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 7900 4150 50  0001 C CNN "Designer"
+	1    7900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4350 7900 4300
+Connection ~ 7900 4350
+Wire Wire Line
+	7900 4350 8650 4350
+Wire Wire Line
+	7450 3950 7900 3950
+Wire Wire Line
+	7900 3950 7900 4000
 $EndSCHEMATC
