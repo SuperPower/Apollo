@@ -528,6 +528,70 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# ERJ-6DSFR13V_ERJ-6DSFR13V
+#
+DEF ERJ-6DSFR13V_ERJ-6DSFR13V R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "ERJ-6DSFR13V_ERJ-6DSFR13V" -100 0 50 V V C CNN
+F2 "Resistor_SMD:R_0805_2012Metric" 40 -10 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Panasonic" 0 0 50 H I C CNN "Mfr_name"
+F5 "ERJ-6DSFR13V" 0 0 50 H I C CNN "Mfr_no"
+F6 "130mΩ" 125 -100 50 H V C CNN "res_value"
+F7 "0805" 125 -175 50 H V C CNN "Package"
+F8 "0.5W" 350 -175 50 H V C CNN "res_power"
+F9 "1%" 550 -175 50 H V C CNN "res_tolerance"
+F10 "https://octopart.com/erj-6dsfr13v-panasonic-73854745?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F11 "-" 0 0 50 H I C CNN "Farnell_link"
+F12 "-" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2021-08-02" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "-" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_PANASONIC-ERJ-6DSFR13V_C2087625.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C2087625" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2021-08-02" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "$0.0735" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "$0.0735" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.0735" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.027" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "0" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://www.mouser.fr/ProductDetail/Panasonic/ERJ-6DSFR13V?qs=%2Fha2pyFadugIZF2pekR4yK6MEbODzjmXbKrvD7WW6loGJNeNbUmT8A%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "667-ERJ-6DSFR13V" 0 0 50 H I C CNN "Mouser_ref"
+F29 "2021-08-02" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.433" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.173" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.089" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.064" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "9,467" 0 0 50 H I C CNN "Mouser_stock"
+F35 "-" 0 0 50 H I C CNN "RS_link"
+F36 "-" 0 0 50 H I C CNN "RS_ref"
+F37 "2021-08-02" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "-" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.00" 0 0 50 H I C CNN "Release_version"
+F45 "2021-08-02" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # IP4220CZ6_IP4220CZ6
 #
 DEF IP4220CZ6_IP4220CZ6 U 0 40 Y Y 1 F N
@@ -1476,70 +1540,6 @@ X G 3 -200 0 100 R 50 50 1 1 I
 X S 4 100 -200 100 U 50 50 1 1 P
 X D 5 50 250 100 D 50 50 1 1 P
 X D 6 150 250 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# erj-6dsfr13v_ERJ-6DSFR13V
-#
-DEF erj-6dsfr13v_ERJ-6DSFR13V R 0 0 N Y 1 F N
-F0 "R" 100 0 50 V V C CNN
-F1 "erj-6dsfr13v_ERJ-6DSFR13V" -100 0 50 V V C CNN
-F2 "Resistor_SMD:R_0805_2012Metric" 40 -10 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "Panasonic" 0 0 50 H I C CNN "Mfr_name"
-F5 "ERJ-6DSFR13V" 0 0 50 H I C CNN "Mfr_no"
-F6 "130mΩ" 125 -100 50 H V C CNN "res_value"
-F7 "0805" 125 -175 50 H V C CNN "Package"
-F8 "0.5W" 350 -175 50 H V C CNN "res_power"
-F9 "1%" 550 -175 50 H V C CNN "res_tolerance"
-F10 "https://octopart.com/erj-6dsfr13v-panasonic-73854745?r=sp" 0 0 50 H I C CNN "Octopart_link"
-F11 "-" 0 0 50 H I C CNN "Farnell_link"
-F12 "-" 0 0 50 H I C CNN "Farnell_ref"
-F13 "2021-08-02" 0 0 50 H I C CNN "Farnell_check_date"
-F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
-F15 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
-F16 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
-F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1000"
-F18 "-" 0 0 50 H I C CNN "Farnell_stock"
-F19 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_PANASONIC-ERJ-6DSFR13V_C2087625.html" 0 0 50 H I C CNN "LCSC_link"
-F20 "C2087625" 0 0 50 H I C CNN "LCSC_ref"
-F21 "2021-08-02" 0 0 50 H I C CNN "LCSC_check_date"
-F22 "$0.0735" 0 0 50 H I C CNN "LCSC_price_qt=1"
-F23 "$0.0735" 0 0 50 H I C CNN "LCSC_price_qt=10"
-F24 "$0.0735" 0 0 50 H I C CNN "LCSC_price_qt=100"
-F25 "$0.027" 0 0 50 H I C CNN "LCSC_price_qt=1000"
-F26 "0" 0 0 50 H I C CNN "LCSC_stock"
-F27 "https://www.mouser.fr/ProductDetail/Panasonic/ERJ-6DSFR13V?qs=%2Fha2pyFadugIZF2pekR4yK6MEbODzjmXbKrvD7WW6loGJNeNbUmT8A%3D%3D" 0 0 50 H I C CNN "Mouser_link"
-F28 "667-ERJ-6DSFR13V" 0 0 50 H I C CNN "Mouser_ref"
-F29 "2021-08-02" 0 0 50 H I C CNN "Mouser_check_date"
-F30 "$0.433" 0 0 50 H I C CNN "Mouser_price_qt=1"
-F31 "$0.173" 0 0 50 H I C CNN "Mouser_price_qt=10"
-F32 "$0.089" 0 0 50 H I C CNN "Mouser_price_qt=100"
-F33 "$0.064" 0 0 50 H I C CNN "Mouser_price_qt=1000"
-F34 "9,467" 0 0 50 H I C CNN "Mouser_stock"
-F35 "-" 0 0 50 H I C CNN "RS_link"
-F36 "-" 0 0 50 H I C CNN "RS_ref"
-F37 "2021-08-02" 0 0 50 H I C CNN "RS_check_date"
-F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
-F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
-F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
-F41 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
-F42 "-" 0 0 50 H I C CNN "RS_stock"
-F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
-F44 "1.00" 0 0 50 H I C CNN "Release_version"
-F45 "2021-08-02" 0 0 50 H I C CNN "Release_date"
-F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 0 -90 0 -100 N
-P 2 0 1 0 0 90 0 100 N
-P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
-P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
-P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
